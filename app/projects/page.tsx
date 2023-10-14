@@ -114,6 +114,30 @@ const Projects: React.FC = () => {
                             I&apos;ve been using it to make my video assets, and it&apos;s been an incredible way for me to translate my coding skills into
                             production quality for my channel without needing to learn video software or pay for Adobe products.
                         </p>
+                        <b className="text-3xl underline underline-offset-8">Wall of Hope</b>
+                        <p className="text-xl">
+                            The{" "}
+                            <a href="https://sites.google.com/view/wallofhope" target="_blank" className="text-pink">
+                                Wall of Hope
+                            </a>{" "}
+                            was a community effort inspired by the teaser for the Genshin Impact character Dehya, in which she donates to an orphanage. We
+                            decided to use our reach and community influence for the greater good and ran a charity campaign through Save the Children, an NGO
+                            focusing on children's issues around the world. This organization was formed by its founder to end children's suffering across
+                            war-torn places in Europe affected by World War I, which mirrored Dehya's teaser in which she gave to help children that were
+                            suffering from conflicts between the desert and forest people in her nation.
+                        </p>
+                        <p className="text-xl">
+                            We raised almost $4,000, and although we did not reach out intended $5,000 goal, I am still proud of the community for being able to
+                            put together this much to donate for no other purpose than we felt like it and were inspired by a video game character.
+                        </p>
+                        <p className="text-xl">
+                            You can see the code for the bot used to automatically assign reward roles, a non-monetary incentive we used to recognize those who
+                            supported our efforts, on{" "}
+                            <a href="https://github.com/hyper-neutrino/wall-of-hope" target="_blank" className="text-pink">
+                                GitHub
+                            </a>
+                            .
+                        </p>
                         <b className="text-3xl underline underline-offset-8">Jelly Compendium</b>
                         <p className="text-xl">
                             Jelly is a language made by Dennis Mitchell specifically for the purpose of code golf. It is extremely terse and although it has not
