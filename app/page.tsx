@@ -8,9 +8,7 @@ import useScroll from "./hooks/scroll";
 
 const skills: Record<string, number> = { JavaScript: 10, "HTML + CSS": 9, Java: 8, Python: 8, Git: 6, SQL: 6, Flask: 3, TypeScript: 2, "Mongo DB": 2 };
 
-interface IProps {}
-
-const Home: React.FC<IProps> = ({}) => {
+const Home: React.FC = () => {
     const scroll = useScroll();
 
     return (
@@ -59,8 +57,8 @@ const Home: React.FC<IProps> = ({}) => {
                 <div className="grid py-20 gap-4" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(min(600px, 100%), 1fr))" }}>
                     <Card title="/about">
                         <p className="text-xl">
-                            Hey! I&apos;m <b className="text-teal">HyperNeutrino</b>, a 21-year old fourth-year computer science student. My hobbies include music,
-                            coding, and video games. I&apos;m currently a Backend Engineer Intern at{" "}
+                            Hey! I&apos;m <b className="text-teal">HyperNeutrino</b>, a 21-year old fourth-year computer science student. My hobbies include
+                            music, coding, and video games. I&apos;m currently a Backend Engineer Intern at{" "}
                             <a href="https://faire.com" target="_blank" className="text-pink">
                                 Faire
                             </a>
@@ -93,6 +91,13 @@ const Home: React.FC<IProps> = ({}) => {
                             </a>
                             , a network of gaming servers on Discord.
                         </p>
+                        <p className="text-xl">
+                            I&apos;m known for my performance on the{" "}
+                            <a href="https://adventofcode.com" target="_blank" className="text-pink">
+                                Advent of Code
+                            </a>
+                            , an annual speed-coding challenge, scoring 11th in 2020, 5th in 2021, and 10th in 2022.
+                        </p>
                     </Card>
                     <Card title="/skills">
                         <b className="text-2xl">Technical</b>
@@ -112,7 +117,7 @@ const Home: React.FC<IProps> = ({}) => {
                             <li>Community Management (Discord)</li>
                         </ul>
                     </Card>
-                    <Card title="/projects">
+                    <Card title="/my-work">
                         <p className="text-xl">
                             Here are some of the projects of which I am the most proud. Find a full list of my projects{" "}
                             <a href="/projects" className="text-pink">
@@ -169,8 +174,8 @@ const Home: React.FC<IProps> = ({}) => {
                             </a>
                         </b>
                         <p className="text-xl">
-                            <b>Proton</b> is a general-purpose multi-paradigm programming language. It is inspired by Python&apos;s features and simplicity but with
-                            C-like syntax and integrates functional language utilities.
+                            <b>Proton</b> is a general-purpose multi-paradigm programming language. It is inspired by Python&apos;s features and simplicity but
+                            with C-like syntax and integrates functional language utilities.
                         </p>
                         <p className="text-xl">
                             While Proton is not a production-ready language and is not efficient nor stable, I created this in high school well before I learned
@@ -209,8 +214,8 @@ const Home: React.FC<IProps> = ({}) => {
                         </p>
                         <b className="text-2xl">Twitch</b>
                         <p className="text-xl">
-                            I don&apos;t stream much right now, but if you&apos;re interested in potential future educational streams and/or gameplay streams, feel free
-                            to give me a follow on my{" "}
+                            I don&apos;t stream much right now, but if you&apos;re interested in potential future educational streams and/or gameplay streams,
+                            feel free to give me a follow on my{" "}
                             <a href="https://twitch.tv/hyperneutrino" target="_blank" className="text-pink">
                                 Twitch channel
                             </a>

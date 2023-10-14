@@ -11,6 +11,8 @@ interface IProps {
 
 const links: [string, string, boolean?][] = [
     ["/projects", "Projects"],
+    ["https://discord.gg/j9uunTRRJm", "Discord", true],
+    ["https://github.com/hyper-neutrino", "GitHub", true],
     ["https://youtube.com/@hyper-neutrino", "YouTube", true],
 ];
 
@@ -26,7 +28,7 @@ const Navbar: React.FC<IProps> = ({ transparent }) => {
 
     return (
         <nav
-            className="z-10 fixed top-0 w-screen inline-flex flex-row items-center justify-between px-10 lg:px-32 xl:px-48 py-0"
+            className="z-10 fixed top-0 w-screen inline-flex flex-row items-center justify-between px-10 lg:px-32 xl:px-48"
             style={{ backgroundColor: bg }}
         >
             <a href="/" className="text-xl inline-flex flex-row items-center gap-4" style={{ paddingTop: padding, paddingBottom: padding }}>
