@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Card from "./components/Card";
 import Content from "./components/Content";
 import Navbar from "./components/Navbar";
@@ -28,7 +29,7 @@ const Home: React.FC<IProps> = ({}) => {
                 <div className="h-full bg-black/60 flex flex-row items-center justify-center">
                     <div className="w-11/12 md:w-5/6 xl:w-3/4 2xl:w-7/12 flex flex-col gap-5 bg-gray-900/40 p-8 rounded-2xl">
                         <p className="text-5xl lg:text-7xl bg-gradient-to-r from-teal/40 to-pink/40 p-2 rounded-2xl">
-                            Hey! I'm <b className="text-teal">Hyper&#8203;Neutrino</b>.
+                            Hey! I&apos;m <b className="text-teal">Hyper&#8203;Neutrino</b>.
                         </p>
                         <p className="text-white/60 text-3xl lg:text-5xl">
                             web dev &middot; discord bot dev &middot;{" "}
@@ -58,8 +59,8 @@ const Home: React.FC<IProps> = ({}) => {
                 <div className="grid py-20 gap-4" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(min(600px, 100%), 1fr))" }}>
                     <Card title="/about">
                         <p className="text-xl">
-                            Hey! I'm <b className="text-teal">HyperNeutrino</b>, a 21-year old fourth-year computer science student. My hobbies include music,
-                            coding, and video games. I'm currently a Backend Engineer Intern at{" "}
+                            Hey! I&apos;m <b className="text-teal">HyperNeutrino</b>, a 21-year old fourth-year computer science student. My hobbies include music,
+                            coding, and video games. I&apos;m currently a Backend Engineer Intern at{" "}
                             <a href="https://faire.com" target="_blank" className="text-pink">
                                 Faire
                             </a>
@@ -120,7 +121,7 @@ const Home: React.FC<IProps> = ({}) => {
                             .
                         </p>
                         <b className="text-2xl flex flex-row flex-wrap items-center gap-2">
-                            <img src="/daedalus.png" className="rounded-full" style={{ height: "2em" }} />
+                            <Image src="/daedalus.png" alt="Daedalus Icon" className="rounded-full" width={40} height={40} />
                             <span>Daedalus</span>
                             <span>&middot;</span>
                             <a href="https://daedalus.hyper-neutrino.xyz" target="_blank" className="text-pink">
@@ -132,11 +133,11 @@ const Home: React.FC<IProps> = ({}) => {
                             you run a Discord server with a need for moderation, automation, or community features, check out Daedalus!
                         </p>
                         <p className="text-xl">
-                            New features are added all the time, and if there's something you need that it doesn't have, feature requests are always
+                            New features are added all the time, and if there&apos;s something you need that it doesn&apos;t have, feature requests are always
                             appreciated.
                         </p>
                         <b className="text-2xl flex flex-row flex-wrap items-center gap-2">
-                            <img src="/tcn.png" style={{ height: "2em" }} />
+                            <Image src="/tcn.png" alt="TCN Icon" width={40} height={40} />
                             <span>Teyvat&nbsp;Collective&nbsp;Network</span>
                             <span>&middot;</span>
                             <a href="https://teyvatcollective.network" target="_blank" className="text-pink">
@@ -156,7 +157,7 @@ const Home: React.FC<IProps> = ({}) => {
                             links channels between servers so members can talk to each other from anywhere, and a public-facing RESTful API.
                         </p>
                         <b className="text-2xl flex flex-row flex-wrap items-center gap-2">
-                            <img src="/proton.png" style={{ height: "2em" }} />
+                            <Image src="/proton.png" alt="Proton Icon" width={40} height={40} />
                             <span>Proton</span>
                             <span>&middot;</span>
                             <a href="https://tio.run#proton" target="_blank" className="text-pink">
@@ -168,7 +169,7 @@ const Home: React.FC<IProps> = ({}) => {
                             </a>
                         </b>
                         <p className="text-xl">
-                            <b>Proton</b> is a general-purpose multi-paradigm programming language. It is inspired by Python's features and simplicity but with
+                            <b>Proton</b> is a general-purpose multi-paradigm programming language. It is inspired by Python&apos;s features and simplicity but with
                             C-like syntax and integrates functional language utilities.
                         </p>
                         <p className="text-xl">
@@ -208,7 +209,7 @@ const Home: React.FC<IProps> = ({}) => {
                         </p>
                         <b className="text-2xl">Twitch</b>
                         <p className="text-xl">
-                            I don't stream much right now, but if you're interested in potential future educational streams and/or gameplay streams, feel free
+                            I don&apos;t stream much right now, but if you&apos;re interested in potential future educational streams and/or gameplay streams, feel free
                             to give me a follow on my{" "}
                             <a href="https://twitch.tv/hyperneutrino" target="_blank" className="text-pink">
                                 Twitch channel
@@ -217,7 +218,7 @@ const Home: React.FC<IProps> = ({}) => {
                         </p>
                         <b className="text-2xl">Stack Exchange</b>
                         <p className="text-xl">
-                            I'm active on Stack Exchange, specifically the Code Golf and Coding Challenges site. Check out my profile{" "}
+                            I&apos;m active on Stack Exchange, specifically the Code Golf and Coding Challenges site. Check out my profile{" "}
                             <a href="https://codegolf.stackexchange.com/users/68942/hyper-neutrino" target="_blank" className="text-teal">
                                 here
                             </a>
@@ -234,8 +235,8 @@ const Home: React.FC<IProps> = ({}) => {
                         <p className="text-xl">
                             You may also email me at{" "}
                             <span className="text-teal">
-                                {"hyperneutrino15@gmail.com".split("").map((c) => (
-                                    <span>{c}</span>
+                                {"hyperneutrino15@gmail.com".split("").map((c, i) => (
+                                    <span key={i}>{c}</span>
                                 ))}
                             </span>
                             .
