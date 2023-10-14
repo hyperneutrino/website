@@ -122,8 +122,8 @@ const Projects: React.FC = () => {
                             </a>{" "}
                             was a community effort inspired by the teaser for the Genshin Impact character Dehya, in which she donates to an orphanage. We
                             decided to use our reach and community influence for the greater good and ran a charity campaign through Save the Children, an NGO
-                            focusing on children's issues around the world. This organization was formed by its founder to end children's suffering across
-                            war-torn places in Europe affected by World War I, which mirrored Dehya's teaser in which she gave to help children that were
+                            focusing on children&apos;s issues around the world. This organization was formed by its founder to end children&apos;s suffering across
+                            war-torn places in Europe affected by World War I, which mirrored Dehya&apos;s teaser in which she gave to help children that were
                             suffering from conflicts between the desert and forest people in her nation.
                         </p>
                         <p className="text-xl">
