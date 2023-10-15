@@ -50,7 +50,7 @@ const Videos: React.FC = () => {
                             <a href="https://github.com/hyper-neutrino/remotion" target="_blank" className="text-pink">
                                 GitHub
                             </a>{" "}
-                            &mdash; just please credit me if you're adapting any of them for your own usage, and please do not take them directly!)
+                            &mdash; just please credit me if you&apos;re adapting any of them for your own usage, and please do not take them directly!)
                         </p>
                     </Card>
                 </Cards>
