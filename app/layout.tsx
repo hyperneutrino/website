@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         title: "HyperNeutrino",
         description: "Welcome to my portfolio website! Check out my projects, about me, and links to my various profiles here.",
         url: "https://hyper-neutrino.xyz",
-        images: "https://hyper-neutrino.xyz/icon.png",
+        images: { url: "https://hyper-neutrino.xyz/icon.png", width: 200, height: 200 },
     },
     colorScheme: "dark",
     themeColor: "#ff0099",
