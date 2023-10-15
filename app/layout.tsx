@@ -17,6 +17,7 @@ export const metadata: Metadata = {
         url: "https://hyper-neutrino.xyz",
         images: { url: "https://hyper-neutrino.xyz/icon.png", width: 200, height: 200 },
     },
+    twitter: { card: "summary" },
     colorScheme: "dark",
     themeColor: "#ff0099",
 };
