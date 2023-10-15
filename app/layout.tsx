@@ -8,7 +8,17 @@ const font = Share_Tech({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "HyperNeutrino",
-    description: "HyperNeutrino's Personal Website",
+    description: "HyperNeutrino's Portfolio Website",
+    keywords: ["hyper", "neutrino", "hyperneutrino", "advent", "of", "code", "adventofcode", "teyvat", "collective", "network", "tcn"],
+    openGraph: {
+        type: "website",
+        title: "HyperNeutrino",
+        description: "Welcome to my portfolio website! Check out my projects, about me, and links to my various profiles here.",
+        url: "https://hyper-neutrino.xyz",
+        images: "https://hyper-neutrino.xyz/icon.png",
+    },
+    colorScheme: "dark",
+    themeColor: "#ff0099",
 };
 
 const RootLayout: React.FC<IProps> = ({ children }) => {
