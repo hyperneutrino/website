@@ -87,13 +87,17 @@ const Navbar: React.FC<IProps> = ({ transparent }) => {
                 </div>
                 <div className="grow" />
                 <hr className="border-white/40 mx-10 md:mx-24 lg:mx-32 my-4" />
-                {links
-                    .filter(([, , , icon]) => icon)
-                    .map(([path, name, external]) => (
-                        <a key={path} href={path} target={external ? "_blank" : "self"}>
-                            {name}
-                        </a>
-                    ))}
+                <div className="flex flex-col items-center pb-4">
+                    <div className="flex flex-row gap-8">
+                        {links
+                            .filter(([, , , icon]) => icon)
+                            .map(([path, name, external]) => (
+                                <a key={path} href={path} target={external ? "_blank" : "self"}>
+                                    <Image src={`/${name}.svg`} alt={`${name} icon`} width={24} height={24} />
+                                </a>
+                            ))}
+                    </div>
+                </div>
             </div>
         </nav>
     );
