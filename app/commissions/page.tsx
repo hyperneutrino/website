@@ -19,10 +19,10 @@ const Projects: React.FC = () => {
                             If you&prime;d like a professionally made custom website or Discord bot, you&prime;ve come to the right place!
                         </p>
                         <p className="text-xl">
-                            I can work very quickly and on short notice, being able to complete simple bots in as little as a couple of hours if I'm not busy.
+                            I can work very quickly and on short notice, being able to complete simple bots in as little as a couple of hours if I&prime;m not busy.
                         </p>
                         <p className="text-xl">
-                            If you'd like to discuss a commission, reach out to me on Discord at <span className="text-teal">@hyperneutrino</span>! (Join my{" "}
+                            If you&prime;d like to discuss a commission, reach out to me on Discord at <span className="text-teal">@hyperneutrino</span>! (Join my{" "}
                             <a href="https://discord.gg/j9uunTRRJm" target="_blank" className="text-pink">
                                 Discord server
                             </a>{" "}
@@ -38,7 +38,7 @@ const Projects: React.FC = () => {
                             !
                         </p>
                         <p className="text-xl">
-                            I&prime;ve been working with JavaScript on the web since 2013 and making full websites since 2018 and Discord bots since 2020. I'm
+                            I&prime;ve been working with JavaScript on the web since 2013 and making full websites since 2018 and Discord bots since 2020. I&prime;m
                             the solo developer of{" "}
                             <a href="https://daedalus.hyper-neutrino.xyz/" target="_blank" className="text-pink">
                                 Daedalus
@@ -53,7 +53,7 @@ const Projects: React.FC = () => {
                         <p className="text-xl text-gray-400">I haven&prime;t done any commissions yet, so I have nothing to show here.</p>
                     </Card>
                     <Card title="/info">
-                        <p className="text-xl">Here's a (very incomplete) list of things I can do:</p>
+                        <p className="text-xl">Here&prime;s a (very incomplete) list of things I can do:</p>
                         <ul className="list-disc list-inside">
                             <li>dynamic, fully animated websites</li>
                             <li>mobile-friendly webpages</li>
@@ -61,7 +61,7 @@ const Projects: React.FC = () => {
                             <li>Discord bot dashboards &amp; admin dashboards / panels</li>
                             <li>slash commands, prefix commands, and automation</li>
                         </ul>
-                        <p className="text-xl">Here's a rough outline of my policy.</p>
+                        <p className="text-xl">Here&prime;s a rough outline of my policy.</p>
                         <ul className="list-disc list-inside">
                             <li>Bug fixes and minor adjustments for features that do not meet your requirements will be done for free.</li>
                             <li>I will not do anything that violates the ToS of anything I am working with or that I believe is harmful or malicious.</li>
