@@ -38,7 +38,7 @@ const Videos: React.FC = () => {
                         </p>
                         <p className="text-xl">
                             Videos made before 2023 were essentially unedited, which shows in its production quality being just one continuous shot and the
-                            relatively poor audio quality (it&apos;s all recorded using my headset microphone).
+                            relatively poor audio quality (it&prime;s all recorded using my headset microphone).
                         </p>
                         <p className="text-xl">
                             From 2023 and beyond, my videos are recorded using OBS and I use Audacity as needed to fix up and edit the audio, and the video
@@ -46,11 +46,11 @@ const Videos: React.FC = () => {
                             <a href="https://remotion.dev" target="_blank" className="text-pink">
                                 Remotion
                             </a>{" "}
-                            (feel free to check out my assets&apos; source code on{" "}
+                            (feel free to check out my assets&prime; source code on{" "}
                             <a href="https://github.com/hyper-neutrino/remotion" target="_blank" className="text-pink">
                                 GitHub
                             </a>{" "}
-                            &mdash; just please credit me if you&apos;re adapting any of them for your own usage, and please do not take them directly!)
+                            &mdash; just please credit me if you&prime;re adapting any of them for your own usage, and please do not take them directly!)
                         </p>
                     </Card>
                 </Cards>

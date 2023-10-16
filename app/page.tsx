@@ -1,7 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
+import { useState } from "react";
 import Card from "./components/Card";
+import Cards from "./components/Cards";
 import Content from "./components/Content";
 import Navbar from "./components/Navbar";
 import useScroll from "./hooks/scroll";
@@ -10,6 +13,8 @@ const skills: Record<string, number> = { JavaScript: 10, "HTML + CSS": 9, Java: 
 
 const Home: React.FC = () => {
     const scroll = useScroll();
+    const [showEmail, setShowEmail] = useState<boolean>(false);
+    const params = useSearchParams();
 
     return (
         <>
@@ -27,7 +32,7 @@ const Home: React.FC = () => {
                 <div className="h-full bg-black/60 flex flex-row items-center justify-center">
                     <div className="w-11/12 md:w-5/6 xl:w-3/4 2xl:w-7/12 flex flex-col gap-5 bg-gray-900/40 p-8 rounded-2xl">
                         <p className="text-5xl lg:text-7xl bg-gradient-to-r from-teal/40 to-pink/40 p-2 rounded-2xl">
-                            Hey! I&apos;m <b className="text-teal">Hyper&#8203;Neutrino</b>.
+                            Hey! I&prime;m <b className="text-teal">Hyper&#8203;Neutrino</b>.
                         </p>
                         <p className="text-white/60 text-3xl lg:text-5xl">
                             web dev &middot; discord bot dev &middot;{" "}
@@ -54,11 +59,11 @@ const Home: React.FC = () => {
                 </div>
             </div>
             <Content noTopMargin>
-                <div className="grid py-20 gap-4" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(min(600px, 100%), 1fr))" }}>
+                <Cards>
                     <Card title="/about">
                         <p className="text-xl">
-                            Hey! I&apos;m <b className="text-teal">HyperNeutrino</b>, a 21-year old fourth-year computer science student. My hobbies include
-                            music, coding, and video games. I&apos;m currently a Backend Engineer Intern at{" "}
+                            Hey! I&prime;m <b className="text-teal">HyperNeutrino</b>, a 21-year old fourth-year computer science student. My hobbies include
+                            music, coding, and video games. I&prime;m currently a Backend Engineer Intern at{" "}
                             <a href="https://faire.com" target="_blank" className="text-pink">
                                 Faire
                             </a>
@@ -92,7 +97,7 @@ const Home: React.FC = () => {
                             , a network of gaming servers on Discord.
                         </p>
                         <p className="text-xl">
-                            I&apos;m known for my performance on the{" "}
+                            I&prime;m known for my performance on the{" "}
                             <a href="https://adventofcode.com" target="_blank" className="text-pink">
                                 Advent of Code
                             </a>
@@ -138,7 +143,7 @@ const Home: React.FC = () => {
                             you run a Discord server with a need for moderation, automation, or community features, check out Daedalus!
                         </p>
                         <p className="text-xl">
-                            New features are added all the time, and if there&apos;s something you need that it doesn&apos;t have, feature requests are always
+                            New features are added all the time, and if there&prime;s something you need that it doesn&prime;t have, feature requests are always
                             appreciated.
                         </p>
                         <b className="text-2xl flex flex-row flex-wrap items-center gap-2">
@@ -174,7 +179,7 @@ const Home: React.FC = () => {
                             </a>
                         </b>
                         <p className="text-xl">
-                            <b>Proton</b> is a general-purpose multi-paradigm programming language. It is inspired by Python&apos;s features and simplicity but
+                            <b>Proton</b> is a general-purpose multi-paradigm programming language. It is inspired by Python&prime;s features and simplicity but
                             with C-like syntax and integrates functional language utilities.
                         </p>
                         <p className="text-xl">
@@ -214,7 +219,7 @@ const Home: React.FC = () => {
                         </p>
                         <b className="text-2xl">Twitch</b>
                         <p className="text-xl">
-                            I don&apos;t stream much right now, but if you&apos;re interested in potential future educational streams and/or gameplay streams,
+                            I don&prime;t stream much right now, but if you&prime;re interested in potential future educational streams and/or gameplay streams,
                             feel free to give me a follow on my{" "}
                             <a href="https://twitch.tv/hyperneutrino" target="_blank" className="text-pink">
                                 Twitch channel
@@ -223,31 +228,40 @@ const Home: React.FC = () => {
                         </p>
                         <b className="text-2xl">Stack Exchange</b>
                         <p className="text-xl">
-                            I&apos;m active on Stack Exchange, specifically the Code Golf and Coding Challenges site. Check out my profile{" "}
+                            I&prime;m active on Stack Exchange, specifically the Code Golf and Coding Challenges site. Check out my profile{" "}
                             <a href="https://codegolf.stackexchange.com/users/68942/hyper-neutrino" target="_blank" className="text-teal">
                                 here
                             </a>
                             !
                         </p>
-                        <b className="text-2xl">Contact Me</b>
-                        <p className="text-xl">
-                            My preferred contact method is through Discord. Join my{" "}
-                            <a href="https://discord.gg/j9uunTRRJm" target="_blank" className="text-pink">
-                                Discord server
-                            </a>{" "}
-                            and DM me. Do not send me friend requests as I will most likely reject them.
-                        </p>
-                        <p className="text-xl">
-                            You may also email me at{" "}
-                            <span className="text-teal">
-                                {"hyperneutrino15@gmail.com".split("").map((c, i) => (
-                                    <span key={i}>{c}</span>
-                                ))}
-                            </span>
-                            .
-                        </p>
+                        <div
+                            className={`flex flex-col gap-6 p-4 rounded-xl ${params.has("hl-contact") ? "bg-white/10 border-pink/60 border-2" : ""}`}
+                            style={{ margin: "-1rem" }}
+                        >
+                            <b id="contact" className="text-2xl">
+                                Contact Me
+                            </b>
+                            <p className="text-xl">
+                                My preferred contact method is through Discord. Join my{" "}
+                                <a href="https://discord.gg/j9uunTRRJm" target="_blank" className="text-pink">
+                                    Discord server
+                                </a>{" "}
+                                and DM me. Do not send me friend requests as I will most likely reject them.
+                            </p>
+                            <p className="text-xl">
+                                You may also email me at{" "}
+                                {showEmail ? (
+                                    <span className="text-teal">hyperneutrino15@gmail.com</span>
+                                ) : (
+                                    <button className="text-gray-400" onClick={() => setShowEmail(true)}>
+                                        [show email]
+                                    </button>
+                                )}
+                                .
+                            </p>
+                        </div>
                     </Card>
-                </div>
+                </Cards>
             </Content>
             <div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-4 bg-black w-screen">
                 &copy; hyper-neutrino 2023 &mdash; image credits:{" "}

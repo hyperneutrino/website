@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const RootLayout: React.FC<IProps> = ({ children }) => {
     return (
-        <html lang="en" className="scroll-smooth">
+        <html lang="en" className="bg-black scroll-smooth">
             <link rel="icon" href="/icon.png" />
             <body className={`${font.className} h-screen text-gray-50 bg-gray-900 text-lg`}>{children}</body>
         </html>

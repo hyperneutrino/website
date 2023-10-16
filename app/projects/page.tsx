@@ -1,4 +1,5 @@
 import Card from "../components/Card";
+import Cards from "../components/Cards";
 import Content from "../components/Content";
 import Navbar from "../components/Navbar";
 import Title from "../components/Title";
@@ -17,7 +18,7 @@ const Projects: React.FC = () => {
             <Navbar transparent />
             <Content>
                 <Title>My Projects</Title>
-                <div className="grid pt-6 pb-24 gap-4" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(min(600px, 100%), 1fr))" }}>
+                <Cards>
                     <Card title="/preface">
                         <p className="text-xl">
                             You can find a full list of my projects on my{" "}
@@ -27,11 +28,11 @@ const Projects: React.FC = () => {
                             .
                         </p>
                         <p className="text-xl">
-                            This is just a collection of projects I would like to show off, and if you&apos;d like to browse through them, I hope you enjoy
+                            This is just a collection of projects I would like to show off, and if you&prime;d like to browse through them, I hope you enjoy
                             scrolling through these and find them interesting and/or inspiring!
                         </p>
                         <p className="text-xl">
-                            If you want to know how I built something or want a tutorial on something you found cool, you&apos;re welcome to join my{" "}
+                            If you want to know how I built something or want a tutorial on something you found cool, you&prime;re welcome to join my{" "}
                             <a href="https://discord.gg/j9uunTRRJm" target="_blank" className="text-pink">
                                 Discord server
                             </a>{" "}
@@ -58,12 +59,12 @@ const Projects: React.FC = () => {
                             others in the Discord sub-community in which I participated. Thus, Daedalus was born.
                         </p>
                         <p className="text-xl">
-                            Initially, I joined a server&apos;s development team to work as a bot developer and wrote a custom bot for that server. Later, more
+                            Initially, I joined a server&prime;s development team to work as a bot developer and wrote a custom bot for that server. Later, more
                             servers heard about my work and wanted to use my bot as well, so I started deploying multiple copies of my bot. Eventually, I was
                             given the idea to work on a public bot, which became Daedalus.
                         </p>
                         <p className="text-xl">
-                            The bot&apos;s source code is proprietary, but you can check out and try the bot for yourself{" "}
+                            The bot&prime;s source code is proprietary, but you can check out and try the bot for yourself{" "}
                             <a href="https://daedalus.hyper-neutrino.xyz/" target="_blank" className="text-pink">
                                 here
                             </a>
@@ -71,12 +72,12 @@ const Projects: React.FC = () => {
                         </p>
                         <b className="text-3xl underline underline-offset-8">Advent of Code</b>
                         <p className="text-xl">
-                            I&apos;ve been competing in the Advent of Code for many years and have multiple leaderboard rankings: 11th in 2020, 5th in 2021, and
+                            I&prime;ve been competing in the Advent of Code for many years and have multiple leaderboard rankings: 11th in 2020, 5th in 2021, and
                             10th in 2022. I think the AoC is a great opportunity for beginners to get started with programming, novices to hone their skills in
                             particular areas, and experienced coders to push their limits and train their problem solving alike.
                         </p>
                         <p className="text-xl">
-                            I&apos;ve been creating walk-through videos on my{" "}
+                            I&prime;ve been creating walk-through videos on my{" "}
                             <a href="https://youtube.com/@hyper-neutrino" target="_blank" className="text-pink">
                                 YouTube channel
                             </a>
@@ -90,7 +91,7 @@ const Projects: React.FC = () => {
                         </p>
                         <p className="text-xl">
                             Although not created solely for code golf, Proton was born out of a desire to combine the simplicity and convenience of Python with
-                            some syntactical components inspired by other languages such as JavaScript, Ruby, etc. Python&apos;s lambda syntax and use of
+                            some syntactical components inspired by other languages such as JavaScript, Ruby, etc. Python&prime;s lambda syntax and use of
                             indentation can be clunky and not always ideal for code golf, so although Proton was created to be a general-use language, it still
                             offers many features that make it great for code golf.
                         </p>
@@ -111,7 +112,7 @@ const Projects: React.FC = () => {
                             programmatically create a video using React and render it to a real MP4.
                         </p>
                         <p className="text-xl">
-                            I&apos;ve been using it to make my video assets, and it&apos;s been an incredible way for me to translate my coding skills into
+                            I&prime;ve been using it to make my video assets, and it&prime;s been an incredible way for me to translate my coding skills into
                             production quality for my channel without needing to learn video software or pay for Adobe products.
                         </p>
                         <b className="text-3xl underline underline-offset-8">Wall of Hope</b>
@@ -122,9 +123,9 @@ const Projects: React.FC = () => {
                             </a>{" "}
                             was a community effort inspired by the teaser for the Genshin Impact character Dehya, in which she donates to an orphanage. We
                             decided to use our reach and community influence for the greater good and ran a charity campaign through Save the Children, an NGO
-                            focusing on children&apos;s issues around the world. This organization was formed by its founder to end children&apos;s suffering across
-                            war-torn places in Europe affected by World War I, which mirrored Dehya&apos;s teaser in which she gave to help children that were
-                            suffering from conflicts between the desert and forest people in her nation.
+                            focusing on children&prime;s issues around the world. This organization was formed by its founder to end children&prime;s suffering
+                            across war-torn places in Europe affected by World War I, which mirrored Dehya&prime;s teaser in which she gave to help children that
+                            were suffering from conflicts between the desert and forest people in her nation.
                         </p>
                         <p className="text-xl">
                             We raised almost $4,000, and although we did not reach out intended $5,000 goal, I am still proud of the community for being able to
@@ -172,15 +173,16 @@ const Projects: React.FC = () => {
                         </p>
                         <b className="text-3xl underline underline-offset-8">Terminal Christmas Tree</b>
                         <p className="text-xl">
-                            It&apos;s just a Christmas tree! You can check it out on{" "}
+                            It&prime;s just a Christmas tree! You can check it out on{" "}
                             <a href="https://github.com/hyper-neutrino/christmas-tree" target="_blank" className="text-pink">
                                 GitHub
                             </a>
                             . Although fairly simple, this was one of my earliest terminal-oriented projects and was my introduction to ANSI codes.
                         </p>
                     </Card>
-                </div>
+                </Cards>
             </Content>
+            <div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-4 bg-black w-screen">&copy; hyper-neutrino 2023</div>
         </>
     );
 };
