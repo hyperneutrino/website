@@ -9,12 +9,12 @@ interface IProps {
     transparent?: boolean;
 }
 
-const links: [string, string, boolean?][] = [
+const links: [string, string, boolean?, boolean?][] = [
     ["/commissions", "commissions"],
     ["/projects", "projects"],
-    ["https://discord.gg/j9uunTRRJm", "discord", true],
-    ["https://github.com/hyper-neutrino", "github", true],
-    ["https://youtube.com/@hyper-neutrino", "youtube", true],
+    ["https://discord.gg/j9uunTRRJm", "discord", true, true],
+    ["https://github.com/hyper-neutrino", "github", true, true],
+    ["https://youtube.com/@hyper-neutrino", "youtube", true, true],
 ];
 
 const Navbar: React.FC<IProps> = ({ transparent }) => {
@@ -38,11 +38,11 @@ const Navbar: React.FC<IProps> = ({ transparent }) => {
             </a>
             <div className="hidden xl:block">
                 <div className="inline-flex flex-row items-center gap-3">
-                    {links.map(([path, name, external], index) => (
+                    {links.map(([path, name, external, icon], index) => (
                         <React.Fragment key={path}>
                             {index === 0 ? null : <span className="text-white/50">/</span>}
                             <a href={path} target={external ? "_blank" : "_self"} className="text-2xl text-gray-50 hover:text-white transition duration-300">
-                                {name}
+                                {icon ? <Image src={`/${name}.svg`} alt={`${name} icon`} width={24} height={24} /> : name}
                             </a>
                         </React.Fragment>
                     ))}
@@ -61,7 +61,7 @@ const Navbar: React.FC<IProps> = ({ transparent }) => {
                 onClick={() => setOpen(false)}
             />
             <div
-                className="fixed top-0 left-1/4 md:left-1/3 lg:left-1/2 h-screen w-3/4 md:w-2/3 lg:w-1/2 bg-gray-800/90 m-0"
+                className="flex flex-col fixed top-0 left-1/4 md:left-1/3 lg:left-1/2 h-screen w-3/4 md:w-2/3 lg:w-1/2 bg-gray-800/90 m-0"
                 style={{ backdropFilter: "blur(2px)", translate: open ? 0 : "100vw", transition: "translate 320ms cubic-bezier(0.5, 0.5, 0.4, 1)" }}
             >
                 <div className="h-6 pr-10 md:pr-24 lg:pr-32 flex flex-row items-center justify-end" style={{ height: `calc(${height}px + 2 * ${padding})` }}>
@@ -72,17 +72,28 @@ const Navbar: React.FC<IProps> = ({ transparent }) => {
                     </button>
                 </div>
                 <div className="pl-5 md:pl-12 lg:pl-16 flex flex-col gap-4">
-                    {links.map(([path, name, external]) => (
-                        <a
-                            key={path}
-                            href={path}
-                            target={external ? "_blank" : "_self"}
-                            className="mx-4 text-xl text-gray-50 hover:text-white transition duration-300"
-                        >
+                    {links
+                        .filter(([, , , icon]) => !icon)
+                        .map(([path, name, external]) => (
+                            <a
+                                key={path}
+                                href={path}
+                                target={external ? "_blank" : "_self"}
+                                className="mx-4 text-xl text-gray-50 hover:text-white transition duration-300"
+                            >
+                                {name}
+                            </a>
+                        ))}
+                </div>
+                <div className="grow" />
+                <hr className="border-white/40 mx-10 md:mx-24 lg:mx-32 my-4" />
+                {links
+                    .filter(([, , , icon]) => icon)
+                    .map(([path, name, external]) => (
+                        <a key={path} href={path} target={external ? "_blank" : "self"}>
                             {name}
                         </a>
                     ))}
-                </div>
             </div>
         </nav>
     );
