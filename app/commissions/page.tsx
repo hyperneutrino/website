@@ -11,18 +11,17 @@ const Projects: React.FC = () => {
             <Content>
                 <Title>Commissions</Title>
                 <Cards>
-                    <Card title="/status" wide>
-                        <p className="text-xl">Commissions are currently closed. Check back later!</p>
-                    </Card>
                     <Card title="/preface">
                         <p className="text-xl">
                             If you&prime;d like a professionally made custom website or Discord bot, you&prime;ve come to the right place!
                         </p>
                         <p className="text-xl">
-                            I can work very quickly and on short notice, being able to complete simple bots in as little as a couple of hours if I&prime;m not busy.
+                            I can work very quickly and on short notice, being able to complete simple bots in as little as a couple of hours if I&prime;m not
+                            busy.
                         </p>
                         <p className="text-xl">
-                            If you&prime;d like to discuss a commission, reach out to me on Discord at <span className="text-teal">@hyperneutrino</span>! (Join my{" "}
+                            If you&prime;d like to discuss a commission, reach out to me on Discord at <span className="text-teal">@hyperneutrino</span>! (Join
+                            my{" "}
                             <a href="https://discord.gg/j9uunTRRJm" target="_blank" className="text-pink">
                                 Discord server
                             </a>{" "}
@@ -38,8 +37,8 @@ const Projects: React.FC = () => {
                             !
                         </p>
                         <p className="text-xl">
-                            I&prime;ve been working with JavaScript on the web since 2013 and making full websites since 2018 and Discord bots since 2020. I&prime;m
-                            the solo developer of{" "}
+                            I&prime;ve been working with JavaScript on the web since 2013 and making full websites since 2018 and Discord bots since 2020.
+                            I&prime;m the solo developer of{" "}
                             <a href="https://daedalus.hyper-neutrino.xyz/" target="_blank" className="text-pink">
                                 Daedalus
                             </a>

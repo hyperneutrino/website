@@ -110,7 +110,7 @@ const Home: React.FC = () => {
                             {Object.entries(skills).map(([item, years]) => (
                                 <div key={item} className="grid items-center gap-2" style={{ gridTemplateColumns: "auto 1fr auto" }}>
                                     <span>{item}</span>
-                                    <hr className="border-teal/60" />{" "}
+                                    <hr className="border-teal/60" />
                                     <span>
                                         {years} year{years === 1 ? "" : "s"}
                                     </span>
@@ -133,7 +133,7 @@ const Home: React.FC = () => {
                         <b className="text-2xl flex flex-row flex-wrap items-center gap-2">
                             <Image src="/daedalus.png" alt="Daedalus Icon" className="rounded-full" width={40} height={40} />
                             <span>Daedalus</span>
-                            <span>&middot;</span>
+                            <span className="text-white/50">/</span>
                             <a href="https://daedalus.hyper-neutrino.xyz" target="_blank" className="text-pink">
                                 website
                             </a>
@@ -149,11 +149,11 @@ const Home: React.FC = () => {
                         <b className="text-2xl flex flex-row flex-wrap items-center gap-2">
                             <Image src="/tcn.png" alt="TCN Icon" width={40} height={40} />
                             <span>Teyvat&nbsp;Collective&nbsp;Network</span>
-                            <span>&middot;</span>
+                            <span className="text-white/50">/</span>
                             <a href="https://teyvatcollective.network" target="_blank" className="text-pink">
                                 website
                             </a>
-                            &middot;
+                            <span className="text-white/50">/</span>
                             <a href="https://github.com/Teyvat-Collective-Network" target="_blank" className="text-pink">
                                 github
                             </a>
@@ -169,11 +169,11 @@ const Home: React.FC = () => {
                         <b className="text-2xl flex flex-row flex-wrap items-center gap-2">
                             <Image src="/proton.png" alt="Proton Icon" width={40} height={40} />
                             <span>Proton</span>
-                            <span>&middot;</span>
+                            <span className="text-white/50">/</span>
                             <a href="https://tio.run#proton" target="_blank" className="text-pink">
                                 try&nbsp;it&nbsp;online
                             </a>
-                            &middot;
+                            <span className="text-white/50">/</span>
                             <a href="https://github.com/hyper-neutrino/proton" target="_blank" className="text-pink">
                                 github
                             </a>
@@ -195,7 +195,7 @@ const Home: React.FC = () => {
                             practical subjects, and coding tutorials? Check out my{" "}
                             <a href="https://youtube.com/@hyper-neutrino" target="_blank" className="text-pink">
                                 YouTube channel
-                            </a>{" "}
+                            </a>
                             !
                         </p>
                         <b className="text-2xl">Discord</b>
@@ -267,8 +267,8 @@ const Home: React.FC = () => {
                 &copy; hyper-neutrino 2023 &mdash; image credits:{" "}
                 <a href="https://flaticon.com/free-icon/proton_341533" target="_blank" className="text-pink">
                     proton icon from flaticon
-                </a>{" "}
-                &middot;{" "}
+                </a>
+                <span className="text-white/50">/</span>
                 <a href="https://pngtree.com/freebackground/blue-technology-circuit-board-line-background_1432805.html" target="_blank" className="text-pink">
                     background from pngtree
                 </a>
