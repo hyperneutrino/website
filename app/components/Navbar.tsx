@@ -10,6 +10,7 @@ interface IProps {
 }
 
 const links: [string, string, boolean?, boolean?][] = [
+    ["/blog", "blog"],
     ["/commissions", "commissions"],
     ["/projects", "projects"],
     ["https://discord.gg/j9uunTRRJm", "discord", true, true],
