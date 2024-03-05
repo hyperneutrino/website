@@ -1,0 +1,5 @@
+p,
+li {
+    @apply prose;
+    color: #dadddf !important;
+}

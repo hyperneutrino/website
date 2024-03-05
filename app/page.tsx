@@ -1,5 +1,6 @@
 "use client";
 
+import { Architects_Daughter } from "next/font/google";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
@@ -8,6 +9,8 @@ import Cards from "./components/Cards";
 import Content from "./components/Content";
 import Navbar from "./components/Navbar";
 import useScroll from "./hooks/scroll";
+
+const font = Architects_Daughter({ weight: "400", subsets: ["latin"] });
 
 const skills: Record<string, number> = { JavaScript: 10, "HTML + CSS": 9, Java: 8, Python: 8, Git: 6, SQL: 6, Flask: 3, TypeScript: 2, "Mongo DB": 2 };
 
@@ -31,7 +34,7 @@ const Home: React.FC = () => {
             >
                 <div className="h-full bg-black/60 flex flex-row items-center justify-center">
                     <div className="w-11/12 md:w-5/6 xl:w-3/4 2xl:w-7/12 flex flex-col gap-5 bg-gray-900/40 p-8 rounded-2xl">
-                        <p className="text-5xl lg:text-7xl bg-gradient-to-r from-teal/40 to-pink/40 p-2 rounded-2xl">
+                        <p className={`${font.className} text-5xl lg:text-7xl bg-gradient-to-r from-teal/40 to-pink/40 p-2 rounded-2xl`}>
                             Hey! I&prime;m <b className="text-teal">Hyper&#8203;Neutrino</b>.
                         </p>
                         <p className="text-white/60 text-3xl lg:text-5xl">
@@ -41,7 +44,7 @@ const Home: React.FC = () => {
                             </a>
                         </p>
                         <p className="text-white/60 text-2xl lg:text-3xl">
-                            21 y/o &middot; he/they &middot; BCS 2025 &middot; backend intern @{" "}
+                            21 y/o &middot; they/them &middot; BCS 2025 &middot; upcoming backend intern @{" "}
                             <a href="https://faire.com" target="_blank" className="text-pink">
                                 faire.com
                             </a>
@@ -63,11 +66,11 @@ const Home: React.FC = () => {
                     <Card title="/about">
                         <p className="text-xl">
                             Hey! I&prime;m <b className="text-teal">HyperNeutrino</b>, a 21-year old fourth-year computer science student. My hobbies include
-                            music, coding, and video games. I&prime;m currently a Backend Engineer Intern at{" "}
+                            music, coding, and video games. I will be a Backend Engineer Intern at{" "}
                             <a href="https://faire.com" target="_blank" className="text-pink">
                                 Faire
-                            </a>
-                            .
+                            </a>{" "}
+                            starting May 2025.
                         </p>
                         <p className="text-xl">
                             I started coding as early as about Grade 5, starting out with Scratch and Python, but my passion for coding really started in Grade
