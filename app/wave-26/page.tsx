@@ -117,44 +117,6 @@ export default function Wave26() {
                     If I am re-elected, you can expect that I will continue taking personal responsibility for upholding the network&prime;s values and ensuring
                     the observer team does the absolute best possible to serve the council and the network&prime;s interests.
                 </p>
-                <p className="text-lg">
-                    Here are two concrete ideas I plan to explore (though not all of these will necesarily come into existence, as these will only be
-                    implemented if the council believes it would be useful):
-                </p>
-                <ul className="pl-8 list-disc">
-                    <li>
-                        <b>Implement a monthly feedback survey.</b>
-                        <ul className="pl-8 list-disc">
-                            <li>
-                                We most often receive feedback when things go wrong, but that often leads to high tension or issues not being communicated in a
-                                broader scope.
-                            </li>
-                            <li>It also means that we don&prime;t know what we are doing right that we should continue doing.</li>
-                            <li>
-                                As such, I believe a monthly (or some other period) anonymous and optional survey can be helpful to figure out what we should
-                                maintain, what we can change before any incidents arise, and any general suggestions.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <b>Create a monthly observer summary statement.</b>
-                        <ul className="pl-8 list-disc">
-                            <li>
-                                We removed the weekly summary as there was not enough activity to justify it and we would return the summaries channel to its
-                                previous purpose.
-                            </li>
-                            <li>
-                                To offer more transparency and give more opportunity to feedback, I think it would make sense to give a monthly
-                                &quot;report&quot; of sorts, giving some insight into what the observer team is working on, progress on any proposals or
-                                suggestions, and how we are addressing any concerns raised.
-                            </li>
-                            <li>
-                                This both offers transparency to the council and gives the observer team an opportunity to regularly reflect, re-center, and
-                                adjust our priorities and make sure nothing is being forgotten or delayed excessively.
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
             </div>
         </div>
     );
