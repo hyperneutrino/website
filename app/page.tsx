@@ -44,7 +44,7 @@ const Home: React.FC = () => {
                             </a>
                         </p>
                         <p className="text-white/60 text-2xl lg:text-3xl">
-                            21 y/o &middot; they/them &middot; BCS 2025 &middot; upcoming backend intern @{" "}
+                            21 y/o &middot; they/them &middot; BCS 2025 &middot; backend intern @{" "}
                             <a href="https://faire.com" target="_blank" className="text-pink">
                                 faire.com
                             </a>
