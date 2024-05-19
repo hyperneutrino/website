@@ -66,11 +66,11 @@ const Home: React.FC = () => {
                     <Card title="/about">
                         <p className="text-xl">
                             Hey! I&prime;m <b className="text-teal">HyperNeutrino</b>, a 21-year old fourth-year computer science student. My hobbies include
-                            music, coding, and video games. I will be a Backend Engineer Intern at{" "}
+                            music, coding, and video games. I am a Backend Engineer Intern at{" "}
                             <a href="https://faire.com" target="_blank" className="text-pink">
                                 Faire
                             </a>{" "}
-                            starting May 2025.
+                            (since May 2024).
                         </p>
                         <p className="text-xl">
                             I started coding as early as about Grade 5, starting out with Scratch and Python, but my passion for coding really started in Grade
