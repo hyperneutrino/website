@@ -12,7 +12,18 @@ import useScroll from "./hooks/scroll";
 
 const font = Architects_Daughter({ weight: "400", subsets: ["latin"] });
 
-const skills: Record<string, number> = { JavaScript: 10, "HTML + CSS": 9, Java: 8, Python: 8, Git: 6, SQL: 6, Flask: 3, TypeScript: 2, "Mongo DB": 2 };
+const skills: Record<string, number> = {
+    JavaScript: 11,
+    "HTML + CSS": 10,
+    Java: 9,
+    Python: 9,
+    Git: 7,
+    SQL: 7,
+    Flask: 4,
+    TypeScript: 3,
+    "Mongo DB": 3,
+    Kotlin: 2,
+};
 
 const Home: React.FC = () => {
     const scroll = useScroll();
@@ -21,7 +32,7 @@ const Home: React.FC = () => {
 
     return (
         <>
-            <Navbar transparent />
+            <Navbar />
             <div
                 className="h-full"
                 style={{
@@ -32,18 +43,18 @@ const Home: React.FC = () => {
                     backgroundSize: "auto cover",
                 }}
             >
-                <div className="h-full bg-black/60 flex flex-row items-center justify-center">
-                    <div className="w-11/12 md:w-5/6 xl:w-3/4 2xl:w-7/12 flex flex-col gap-5 bg-gray-900/40 p-8 rounded-2xl">
+                <div className="h-full bg-white/40 flex flex-row items-center justify-center">
+                    <div className="w-11/12 md:w-5/6 xl:w-3/4 2xl:w-7/12 flex flex-col gap-5 bg-white/50 p-8 rounded-2xl">
                         <p className={`${font.className} text-5xl lg:text-7xl bg-gradient-to-r from-teal/40 to-pink/40 p-2 rounded-2xl`}>
-                            Hey! I&prime;m <b className="text-teal">Hyper&#8203;Neutrino</b>.
+                            Hey! I&prime;m <b className="text-pink">Hyper&#8203;Neutrino</b>.
                         </p>
-                        <p className="text-white/60 text-3xl lg:text-5xl">
+                        <p className="text-3xl lg:text-5xl">
                             web dev &middot; discord bot dev &middot;{" "}
                             <a href="https://youtube.com/@hyper-neutrino" target="_blank" className="text-pink">
                                 youtuber
                             </a>
                         </p>
-                        <p className="text-white/60 text-2xl lg:text-3xl">
+                        <p className="text-black/60 text-2xl lg:text-3xl">
                             21 y/o &middot; they/them &middot; BCS 2025 &middot; backend intern @{" "}
                             <a href="https://faire.com" target="_blank" className="text-pink">
                                 faire.com
@@ -52,7 +63,7 @@ const Home: React.FC = () => {
                     </div>
                     <button className="absolute bottom-10 w-12 h-6 mb-2 cursor-default" onClick={() => window.scrollTo({ top: window.innerHeight - 80 })}>
                         <svg
-                            className="text-white stroke-current fill-transparent"
+                            className="text-black stroke-current fill-transparent"
                             viewBox="0 0 20 10"
                             style={{ animation: "oscillate 0.75s infinite alternate" }}
                         >
@@ -70,7 +81,7 @@ const Home: React.FC = () => {
                             <a href="https://faire.com" target="_blank" className="text-pink">
                                 Faire
                             </a>{" "}
-                            (since May 2024).
+                            (May &ndash; December 2024).
                         </p>
                         <p className="text-xl">
                             I started coding as early as about Grade 5, starting out with Scratch and Python, but my passion for coding really started in Grade
@@ -104,7 +115,8 @@ const Home: React.FC = () => {
                             <a href="https://adventofcode.com" target="_blank" className="text-pink">
                                 Advent of Code
                             </a>
-                            , an annual speed-coding challenge, scoring 11th in 2020, 5th in 2021, and 10th in 2022.
+                            , an annual speed-coding challenge, scoring 11<sup>th</sup> in 2020, 5<sup>th</sup> in 2021, 10<sup>th</sup> in 2022, and 11
+                            <sup>th</sup> in 2023.
                         </p>
                     </Card>
                     <Card title="/skills">
@@ -136,7 +148,7 @@ const Home: React.FC = () => {
                         <b className="text-2xl flex flex-row flex-wrap items-center gap-2">
                             <Image src="/daedalus.png" alt="Daedalus Icon" className="rounded-full" width={40} height={40} />
                             <span>Daedalus</span>
-                            <span className="text-white/50">/</span>
+                            <span className="text-black/25">/</span>
                             <a href="https://daedalus.hyper-neutrino.xyz" target="_blank" className="text-pink">
                                 website
                             </a>
@@ -152,11 +164,11 @@ const Home: React.FC = () => {
                         <b className="text-2xl flex flex-row flex-wrap items-center gap-2">
                             <Image src="/tcn.png" alt="TCN Icon" width={40} height={40} />
                             <span>Teyvat&nbsp;Collective&nbsp;Network</span>
-                            <span className="text-white/50">/</span>
+                            <span className="text-black/25">/</span>
                             <a href="https://teyvatcollective.network" target="_blank" className="text-pink">
                                 website
                             </a>
-                            <span className="text-white/50">/</span>
+                            <span className="text-black/25">/</span>
                             <a href="https://github.com/Teyvat-Collective-Network" target="_blank" className="text-pink">
                                 github
                             </a>
@@ -172,11 +184,11 @@ const Home: React.FC = () => {
                         <b className="text-2xl flex flex-row flex-wrap items-center gap-2">
                             <Image src="/proton.png" alt="Proton Icon" width={40} height={40} />
                             <span>Proton</span>
-                            <span className="text-white/50">/</span>
+                            <span className="text-black/25">/</span>
                             <a href="https://tio.run#proton" target="_blank" className="text-pink">
                                 try&nbsp;it&nbsp;online
                             </a>
-                            <span className="text-white/50">/</span>
+                            <span className="text-black/25">/</span>
                             <a href="https://github.com/hyper-neutrino/proton" target="_blank" className="text-pink">
                                 github
                             </a>
@@ -266,14 +278,10 @@ const Home: React.FC = () => {
                     </Card>
                 </Cards>
             </Content>
-            <div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-4 bg-black w-screen">
-                &copy; hyper-neutrino 2023 &mdash; image credits:{" "}
+            <div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-4 bg-white/90 w-screen">
+                &copy; hyper-neutrino 2024 &mdash; image credits:{" "}
                 <a href="https://flaticon.com/free-icon/proton_341533" target="_blank" className="text-pink">
                     proton icon from flaticon
-                </a>
-                <span className="text-white/50">/</span>
-                <a href="https://pngtree.com/freebackground/blue-technology-circuit-board-line-background_1432805.html" target="_blank" className="text-pink">
-                    background from pngtree
                 </a>
             </div>
         </>

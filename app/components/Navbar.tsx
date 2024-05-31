@@ -5,9 +5,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import useScroll from "../hooks/scroll";
 
-interface IProps {
-    transparent?: boolean;
-}
+interface IProps {}
 
 const links: [string, string, boolean?, boolean?][] = [
     ["/blog", "blog"],
@@ -18,14 +16,12 @@ const links: [string, string, boolean?, boolean?][] = [
     ["https://youtube.com/@hyper-neutrino", "youtube", true, true],
 ];
 
-const Navbar: React.FC<IProps> = ({ transparent }) => {
+const Navbar: React.FC<IProps> = ({}) => {
     const [open, setOpen] = useState<boolean>(false);
     const scroll = useScroll();
 
     const padding = `${interpolate(scroll, [0, 200], [2.5, 1.5])}rem`;
-    const bg = transparent
-        ? `rgb(33, 34, 37, ${interpolate(scroll, [0, 200], [0, 1])})`
-        : `rgb(${interpolate(scroll, [0, 200], [17, 33])}, ${interpolate(scroll, [0, 200], [18, 34])}, ${interpolate(scroll, [0, 200], [20, 37])})`;
+    const bg = `rgb(250, 240, 245, ${interpolate(scroll, [0, 200], [0, 1])})`;
     const height = interpolate(scroll, [0, 200], [60, 40]);
 
     return (
@@ -41,8 +37,8 @@ const Navbar: React.FC<IProps> = ({ transparent }) => {
                 <div className="inline-flex flex-row items-center gap-3">
                     {links.map(([path, name, external, icon], index) => (
                         <React.Fragment key={path}>
-                            {index === 0 ? null : <span className="text-white/50">/</span>}
-                            <a href={path} target={external ? "_blank" : "_self"} className="text-2xl text-gray-50 hover:text-white transition duration-300">
+                            {index === 0 ? null : <span className="text-black/50">/</span>}
+                            <a href={path} target={external ? "_blank" : "_self"} className="text-2xl text-gray-600 hover:text-black transition duration-300">
                                 {icon ? <Image src={`/${name}.svg`} alt={`${name} icon`} width={24} height={24} /> : name}
                             </a>
                         </React.Fragment>
@@ -51,7 +47,7 @@ const Navbar: React.FC<IProps> = ({ transparent }) => {
             </div>
             <div className="block xl:hidden h-6">
                 <button className="w-6 h-6 cursor-default" onClick={() => setOpen(true)}>
-                    <svg className="text-white stroke-current fill-transparent" viewBox="0 0 10 10">
+                    <svg className="text-black stroke-current fill-transparent" viewBox="0 0 10 10">
                         <path d="M 0 1 L 10 1 M 0 5 L 10 5 M 0 9 L 10 9" />
                     </svg>
                 </button>

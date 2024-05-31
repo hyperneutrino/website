@@ -6,17 +6,20 @@ import ProjectPageSide from "../components/ProjectPageSide";
 import Title from "../components/Title";
 
 const techs: [string, string][] = [
-    ["Bun (JS/TS Runtime)", "https://bun.sh/"],
     ["TypeScript", "https://www.typescriptlang.org/"],
+    ["Node (JS Runtime)", "https://nodejs.org/"],
     ["discord.js", "https://discord.js.org/"],
     ["Svelte (Web Framework)", "https://svelte.dev/"],
     ["MongoDB (Document Database)", "https://www.mongodb.com/"],
+    ["React (Web Framework)", "https://reactjs.org/"],
+    ["MySQL (Relational Database)", "https://www.mysql.com/"],
+    ["Drizzle (ORM)", "https://drizzle.dev/"],
 ];
 
 const Projects: React.FC = () => {
     return (
         <>
-            <Navbar transparent />
+            <Navbar />
             <Content>
                 <Title>My Projects</Title>
                 <Cards>
@@ -76,9 +79,10 @@ const Projects: React.FC = () => {
                         />
                         <Card title="/advent-of-code" w-2>
                             <p className="text-xl">
-                                I&prime;ve been competing in the Advent of Code for many years and have multiple leaderboard rankings: 11th in 2020, 5th in
-                                2021, and 10th in 2022. I think the AoC is a great opportunity for beginners to get started with programming, novices to hone
-                                their skills in particular areas, and experienced coders to push their limits and train their problem solving alike.
+                                I&prime;ve been competing in the Advent of Code for many years and have multiple leaderboard rankings: 11<sup>th</sup> in 2020,
+                                5<sup>th</sup> in 2021, 10<sup>th</sup> in 2022, and 11<sup>th</sup> in 2023. I think the AoC is a great opportunity for
+                                beginners to get started with programming, novices to hone their skills in particular areas, and experienced coders to push
+                                their limits and train their problem solving alike.
                             </p>
                             <p className="text-xl">
                                 I&prime;ve been creating walk-through videos on my{" "}
@@ -183,7 +187,7 @@ const Projects: React.FC = () => {
                     </div>
                 </Cards>
             </Content>
-            <div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-4 bg-black w-screen">&copy; hyper-neutrino 2023</div>
+            <div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-4 bg-white/90 w-screen">&copy; hyper-neutrino 2024</div>
         </>
     );
 };

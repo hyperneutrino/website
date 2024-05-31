@@ -19,15 +19,15 @@ export const metadata: Metadata = {
         images: { url: "https://hyper-neutrino.xyz/banner.png" },
     },
     twitter: { card: "summary_large_image" },
-    colorScheme: "dark",
-    themeColor: "#ff0099",
+    colorScheme: "light",
+    themeColor: "#df72c0",
 };
 
 const RootLayout: React.FC<IProps> = ({ children }) => {
     return (
         <html lang="en" className="bg-black scroll-smooth">
             <link rel="icon" href="/icon.png" />
-            <body className={`${font.className} h-screen text-gray-50 bg-gray-900 text-lg`}>{children}</body>
+            <body className={`${font.className} h-screen text-gray-900 bg-gray-50 text-lg`}>{children}</body>
         </html>
     );
 };

@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 const NotFound: React.FC = () => {
     return (
         <>
-            <Navbar transparent />
+            <Navbar />
             <div
                 className="h-full"
                 style={{

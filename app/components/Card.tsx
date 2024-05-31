@@ -19,7 +19,7 @@ const Card: React.FC<IProps> = ({ children, title, wide, "w-2": w2, still }) => 
     return (
         <div
             ref={ref}
-            className="w-full h-full relative bg-gray-700/40 hover:bg-gray-600/40 rounded-xl p-10 flex flex-col justify-between gap-6 backdrop-blur-sm"
+            className="w-full h-full relative bg-gray-50/40 hover:bg-gray-50/60 rounded-xl p-10 flex flex-col justify-between gap-6 backdrop-blur-sm"
             style={{
                 gridColumn: wide ? "1 / -1" : w2 ? "span 2 / span 2" : "",
                 opacity: show ? 1 : 0,
