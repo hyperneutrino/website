@@ -55,7 +55,7 @@ const Home: React.FC = () => {
                             </a>
                         </p>
                         <p className="text-black/60 text-2xl lg:text-3xl">
-                            21 y/o &middot; they/them &middot; BCS 2025 &middot; backend intern @{" "}
+                            22 y/o &middot; BCS 2025 &middot; backend intern @{" "}
                             <a href="https://faire.com" target="_blank" className="text-pink">
                                 faire.com
                             </a>
@@ -76,7 +76,7 @@ const Home: React.FC = () => {
                 <Cards>
                     <Card title="/about">
                         <p className="text-xl">
-                            Hey! I&prime;m <b className="text-teal">HyperNeutrino</b>, a 21-year old fourth-year computer science student. My hobbies include
+                            Hey! I&prime;m <b className="text-teal">HyperNeutrino</b>, a 22-year old fourth-year computer science student. My hobbies include
                             music, coding, and video games. I am a Backend Engineer Intern at{" "}
                             <a href="https://faire.com" target="_blank" className="text-pink">
                                 Faire
