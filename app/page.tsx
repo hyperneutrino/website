@@ -55,7 +55,7 @@ const Home: React.FC = () => {
                             </a>
                         </p>
                         <p className="text-black/60 text-2xl lg:text-3xl">
-                            22 y/o &middot; BCS 2025 &middot; backend intern @{" "}
+                            22 y/o &middot; she/her 🏳️‍⚧️ &middot; BCS 2025 &middot; backend intern @{" "}
                             <a href="https://faire.com" target="_blank" className="text-pink">
                                 faire.com
                             </a>
