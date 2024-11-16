@@ -12,7 +12,7 @@ const links: [string, string, boolean?, boolean?][] = [
     ["/projects", "projects"],
     ["https://ko-fi.com/hyperneutrino", "kofi", true, true],
     ["https://discord.gg/j9uunTRRJm", "discord", true, true],
-    ["https://bsky.app/profile/hyperneutrino.bsky.social", "bluesky", true, true],
+    ["https://bsky.app/profile/hyperneutrino.xyz", "bluesky", true, true],
     ["https://github.com/hyper-neutrino", "github", true, true],
     ["https://youtube.com/@hyper-neutrino", "youtube", true, true],
 ];
