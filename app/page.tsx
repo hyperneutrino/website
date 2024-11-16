@@ -54,12 +54,7 @@ const Home: React.FC = () => {
                                 youtuber
                             </a>
                         </p>
-                        <p className="text-black/60 text-2xl lg:text-3xl">
-                            22 y/o &middot; she/her 🏳️‍⚧️ &middot; BCS 2025 &middot; backend intern @{" "}
-                            <a href="https://faire.com" target="_blank" className="text-pink">
-                                faire.com
-                            </a>
-                        </p>
+                        <p className="text-black/60 text-2xl lg:text-3xl">22 y/o &middot; she/her 🏳️‍⚧️ &middot; BCS 2025</p>
                     </div>
                     <button className="absolute bottom-10 w-12 h-6 mb-2 cursor-default" onClick={() => window.scrollTo({ top: window.innerHeight - 80 })}>
                         <svg
@@ -77,11 +72,7 @@ const Home: React.FC = () => {
                     <Card title="/about">
                         <p className="text-xl">
                             Hey! I&prime;m <b className="text-teal">HyperNeutrino</b>, a 22-year old fourth-year computer science student. My hobbies include
-                            music, coding, and video games. I am a Backend Engineer Intern at{" "}
-                            <a href="https://faire.com" target="_blank" className="text-pink">
-                                Faire
-                            </a>{" "}
-                            (May &ndash; December 2024).
+                            music, coding, and video games.
                         </p>
                         <p className="text-xl">
                             I started coding as early as about Grade 5, starting out with Scratch and Python, but my passion for coding really started in Grade
