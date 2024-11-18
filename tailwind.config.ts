@@ -5,7 +5,7 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                pink: "#ba44a2",
+                pink: "#c765ab",
                 teal: "#27756d",
                 gray: {
                     25: "#e0e1e3",

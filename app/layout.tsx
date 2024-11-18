@@ -7,20 +7,20 @@ interface IProps extends React.PropsWithChildren {}
 const font = Share_Tech({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://hyper-neutrino.xyz"),
+    metadataBase: new URL("https://hyperneutrino.xyz"),
     title: "HyperNeutrino",
     description: "HyperNeutrino's Portfolio Website",
-    keywords: ["hyper", "neutrino", "hyperneutrino", "advent", "of", "code", "adventofcode", "teyvat", "collective", "network", "tcn"],
+    keywords: ["hyper", "neutrino", "hyperneutrino", "advent", "of", "code", "adventofcode"],
     openGraph: {
         type: "website",
         title: "HyperNeutrino",
-        description: "Welcome to my portfolio website! Check out my projects, about me, and links to my various profiles here.",
-        url: "https://hyper-neutrino.xyz",
-        images: { url: "https://hyper-neutrino.xyz/banner.png" },
+        description: "hey~ i'm hyperneutrino, come check out my projects, about me, and links to my socials here :D",
+        url: "https://hyperneutrino.xyz",
+        images: { url: "https://hyperneutrino.xyz/banner.png" },
     },
     twitter: { card: "summary_large_image" },
-    colorScheme: "light",
-    themeColor: "#df72c0",
+    colorScheme: "dark",
+    themeColor: "#c765ab",
 };
 
 const RootLayout: React.FC<IProps> = ({ children }) => {
