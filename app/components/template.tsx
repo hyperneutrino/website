@@ -20,10 +20,10 @@ const Template: React.FC<React.PropsWithChildren<{ animate: boolean; setAnimate:
         ["https://ko-fi.com/hyperneutrino", "kofi", "Ko-Fi"],
         ["https://discord.gg/j9uunTRRJm", "discord", "Discord"],
         ["https://bsky.app/profile/hyperneutrino.xyz", "bluesky", "Bluesky"],
-        ["https://github.com/hyper-neutrino", "github", "GitHub"],
+        ["https://github.com/hyperneutrino", "github", "GitHub"],
         ["https://youtube.com/@hyper-neutrino", "youtube", "YouTube"],
         ["https://www.twitch.tv/hyperneutrino", "twitch", "Twitch"],
-        ["https://codegolf.stackexchange.com/users/68942/hyper-neutrino", "stack", "Stack Exchange"],
+        ["https://codegolf.stackexchange.com/users/68942/hyperneutrino", "stack", "Stack Exchange"],
     ];
 
     return (

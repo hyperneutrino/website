@@ -117,7 +117,7 @@ const Home: React.FC = () => {
                             try it online
                         </Link>
                         <div className="text-gray">/</div>
-                        <Link href="https://github.com/hyper-neutrino/proton" target="_blank" className="text-teal">
+                        <Link href="https://github.com/hyperneutrino/proton" target="_blank" className="text-teal">
                             github
                         </Link>
                     </span>
