@@ -6,16 +6,16 @@
     <p>
         Friends, today, November 20th, is the International Transgender Day of Remembrance, also known as TDoR. Annually this day, we memorialize those who have
         lost their lives to transphobia, an issue we still face every day despite overall improving societal acceptance and legal protections. On my
-        <a href="https://www.youtube.com/watch?v=qQPTUMu298g" class="text-teal">last video</a>, I had a handful of very transphobic comments, and while I
-        anticipated this which is why I set all comments to be held for approval, it's a harsh reminder that we continue to face hate and threat to safety, both
-        directly and through threats to our mental well-being.
+        <a href="https://www.youtube.com/watch?v=qQPTUMu298g" target="_blank" class="text-teal">last video</a>, I had a handful of very transphobic comments,
+        and while I anticipated this which is why I set all comments to be held for approval, it's a harsh reminder that we continue to face hate and threat to
+        safety, both directly and through threats to our mental well-being.
     </p>
     <p>
         Some of the stuff I'm going to talk about in this article will be a bit serious, so if you aren't mentally equipped for some hard conversations, please
         click away, and if you decide to keep reading and change your mind at any point, I totally understand. Before you go, if you find yourself in need of
-        help, the <a href="https://www.thetrevorproject.org/" class="text-teal">Trevor Project</a> is a resource that I've heard good things about, though it isn't
-        something I've personally used, and if you want to show your support, donating to this project, especially following the recent election, would be awesome.
-        If you're leaving now, thanks for being here and I'll see you next time.
+        help, the <a href="https://www.thetrevorproject.org/" target="_blank" class="text-teal">Trevor Project</a> is a resource that I've heard good things about,
+        though it isn't something I've personally used, and if you want to show your support, donating to this project, especially following the recent election,
+        would be awesome. If you're leaving now, thanks for being here and I'll see you next time.
     </p>
     <p>
         TDoR first started in 1999 to memorialize Rita Hester, an African-American transgender woman, who was murdered in Allston, Massachusetts on November
