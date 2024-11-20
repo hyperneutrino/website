@@ -21,15 +21,15 @@
 
 <div class="flex min-h-screen w-full flex-col items-center bg-gray-900 text-lg text-white lg:bg-black">
     <div class="flex min-h-screen w-[min(800px,95vw)] gap-4 bg-gray-900">
-        <div class="border-l-pink h-100 breathe ml-1 border-l-4 md:ml-2 lg:ml-4" style="animation: {$breathe};"></div>
+        <div class="h-100 breathe ml-1 border-l-4 border-l-pink md:ml-2 lg:ml-4" style="animation: {$breathe};"></div>
         <div class="mr-1 mt-4 flex flex-grow flex-col justify-between md:mr-2 lg:mr-4">
             <div class="mb-20 flex flex-col gap-2">
                 <div class="flex items-center gap-4">
                     <img src="/icon.png" width={64} height={64} alt="pink lambda icon" style="animation: {$breathe};" />
-                    <span class="text-[min(6vw,2rem)]">hyperneutrino</span>
+                    <h1 class="text-[min(6vw,2rem)]">hyperneutrino</h1>
                 </div>
-                <hr class="border-pink border" style="animation: {$breathe};" />
-                <button class="border-pink rounded-md border-2 px-8 py-1 text-sm md:w-max" on:click={() => animate.update((x) => !x)}>
+                <hr class="border border-pink" style="animation: {$breathe};" />
+                <button class="rounded-md border-2 border-pink px-8 py-1 text-sm md:w-max" on:click={() => animate.update((x) => !x)}>
                     {$animate ? "disable" : "enable"} animations
                 </button>
                 <div class="flex flex-wrap items-center gap-2">
@@ -46,7 +46,7 @@
                     {/each}
                 </div>
                 <div class="h-8"></div>
-                <p class="text-xl sm:text-2xl">hey, i'm <b>iris</b> a.k.a. hyperneutrino</p>
+                <h2 class="text-xl sm:text-2xl">hey, i'm <b>iris</b> a.k.a. hyperneutrino</h2>
                 <p>web dev &middot; discord bot dev &middot; youtuber</p>
                 <p class="text-gray-200">22 y/o &middot; she/her 🏳️‍⚧️ &middot; BCS 2025</p>
                 {#if email}
@@ -68,7 +68,7 @@
                 <slot />
             </div>
             <div>
-                <hr class="border-pink border" style="animation: {breathe};" />
+                <hr class="border border-pink" style="animation: {breathe};" />
                 <p class="py-2 text-center text-sm text-gray-500">&copy; 2024 hyperneutrino</p>
             </div>
         </div>
