@@ -18,7 +18,7 @@
         <p>
             i'm known for my performance in the{" "}
             <a href="https://adventofcode.com" target="_blank" class="text-teal">advent of code</a>
-            , an annual speed-coding challenge, with a placement of 11<sup>th</sup>, 5<sup>th</sup>, 10<sup>th</sup>, and 11<sup>th</sup> over the past four years
+            , an annual speed-coding challenge, with a placement of 11<sup>th</sup>, 5<sup>th</sup>, 10<sup>th</sup>, 11<sup>th</sup>, and 86<sup>th</sup> (thanks GenAI) over the past five years
         </p>
     </div>
     <div class={$card}>
