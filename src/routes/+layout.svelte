@@ -69,7 +69,7 @@
             </div>
             <div>
                 <hr class="border border-pink" style="animation: {breathe};" />
-                <p class="py-2 text-center text-sm text-gray-500">&copy; 2024 hyperneutrino</p>
+                <p class="py-2 text-center text-sm text-gray-500">&copy; 2025 hyperneutrino</p>
             </div>
         </div>
     </div>
