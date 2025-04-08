@@ -1,96 +1,115 @@
 <script lang="ts">
-    import { card } from "$lib";
+    import { emailAddress } from "$lib";
+    let email: string = "";
 </script>
 
+<h2 class="text-xl sm:text-2xl">hey, I'm <b>Iris</b> a.k.a. hyperneutrino</h2>
+<p>web dev &middot; discord bot dev &middot; youtuber</p>
+<p class="flex items-center gap-2 text-lg text-gray-200">
+    22 &middot; she/they
+    <img src="/canada.png" alt="canadian flag" class="h-4" />
+    <img src="/trans.png" alt="trans flag" class="h-4" />
+    <img src="/enby.png" alt="non-binary flag" class="h-4" />
+    &middot; BCS 2025
+</p>
+{#if email}
+    <p>
+        <a href="mailto:{email}">{email}</a>
+    </p>
+{:else}
+    <p>
+        <button class="text-gray-500" on:click={() => (email = emailAddress)}>( click for business email )</button>
+    </p>
+{/if}
 <div class="flex flex-col items-center gap-4">
-    <div class={$card}>
+    <div
+        class="flex w-full flex-col gap-4 border-2 p-2 opacity-80 transition duration-500 hover:scale-100 hover:opacity-100 md:scale-[99%] md:opacity-80"
+        style="border-image-slice: 1; border-image-source: linear-gradient(to bottom right, #c765ab 20%, #65abc7 80%)"
+    >
         <p>
-            hey! i&prime;m <b>hyperneutrino</b>, a 22-year-old transfem computer science student. my hobbies include music, coding, and video games
+            hey! I'm <b>hyperneutrino</b>, a 22-y/o trans/non-binary computer science student. my hobbies include music, coding, and video games
         </p>
         <p>
-            i started coding as early as about grade 5 starting with scratch and python, but my passion for coding really started in grade 6 with{" "}
-            <a href="https://threejs.org/">three.js</a> making random graphics projects including a rubik&prime;s cube simulator
+            I started coding around grade 5 starting with miscellaneous three.js projects including a rubik's cube simulator. since then, I've worked with many
+            languages, frameworks, and libraries
         </p>
         <p>
-            i've worked with a wide variety of technologies with languages ranging from c++ and java to python and typescript, frameworks like react and svelte,
-            libraries like discord.js and elysia, and more
-        </p>
-        <p>
-            i'm known for my performance in the{" "}
-            <a href="https://adventofcode.com" target="_blank" class="text-teal">advent of code</a>
-            , an annual speed-coding challenge, with a placement of 11<sup>th</sup>, 5<sup>th</sup>, 10<sup>th</sup>, 11<sup>th</sup>, and 86<sup>th</sup> (thanks GenAI) over the past five years
-        </p>
-    </div>
-    <div class={$card}>
-        <p>
-            <b>technical skills:</b> javascript, html, css, java, python (over 10 years) + git, sql, flask, typescript, svelte, react, mongodb, kotlin, c++, discord.js,
-            elysia, next.js, vercel, tailwindcss, drizzle orm
-        </p>
-        <p>
-            <b>other skills:</b> teaching (ranging from grade 1 through high school in mathematics and coding), community management & leadership (discord, university
-            clubs), public speaking (debate club, university clubs)
+            I'm known for my performance in the
+            <a href="https://adventofcode.com" target="_blank">advent of code</a>, an annual speed-coding challenge, with a placement of 11<sup>th</sup>, 5<sup
+                >th</sup
+            >, 10<sup>th</sup>, 11<sup>th</sup>, and 86<sup>th</sup> (thanks to AI cheaters) over the past five years
         </p>
     </div>
-    <div class={$card}>
-        <p>here are some of the projects i'm the most proud of! you can find an (incomplete) list of stuff i've made on my github</p>
+    <div
+        class="flex w-full flex-col gap-4 border-2 p-2 opacity-80 transition duration-500 hover:scale-100 hover:opacity-100 md:scale-[99%] md:opacity-80"
+        style="border-image-slice: 1; border-image-source: linear-gradient(to bottom right, #c765ab 20%, #65abc7 80%)"
+    >
+        <p>here are some of the projects I'm the most proud of! you can find an (incomplete) list of stuff I've made on my github</p>
         <span class="flex flex-wrap items-center gap-4">
             <img src="/daedalus.png" width={40} height={40} alt="daedalus icon" class="rounded-full" />
-            <b>daedalus</b>
-            <div class="text-gray">/</div>
-            <a href="https://daedalusbot.xyz" target="_blank" class="text-teal">website</a>
+            <a href="https://daedalusbot.xyz" target="_blank"><b>daedalus</b></a>
         </span>
         <p>
-            <b>daedalus</b> is a highly customizable, modern, and transparent general-purpose discord bot featuring a wide array of functionalities. if you run a
-            discord server with a need for moderation, automation, or community features, check out daedalus :)
+            <b>daedalus</b> is a customizable general-purpose discord bot with a wide variety of features
         </p>
         <span class="flex flex-wrap items-center gap-4">
             <img src="/aoc.svg" width={40} height={40} alt="aoc icon" class="rounded-full" />
-            <b>advent of code</b>
+            <a href="https://adventofcode.com" target="_blank"><b>advent of code</b></a>
             <div class="text-gray">/</div>
-            <a href="https://adventofcode.com" target="_blank" class="text-teal">website</a>
+            <a href="https://youtube.com/playlist?list=PLnNm9syGLD3z5MSpszQaN5kinAELELnLP" target="_blank">2024 playlist</a>
             <div class="text-gray">/</div>
-            <a href="https://youtube.com/playlist?list=PLnNm9syGLD3zLoIGWeHfnEekEKxPKLivw" target="_blank" class="text-teal">2023 playlist</a>
-            <div class="text-gray">/</div>
-            <a href="https://youtube.com/playlist?list=PLnNm9syGLD3yf-YW-a5XNh1CJN07xr0Kz" target="_blank" class="text-teal">2022 playlist</a>
+            <a href="https://youtube.com/playlist?list=PLnNm9syGLD3zLoIGWeHfnEekEKxPKLivw" target="_blank">2023 playlist</a>
         </span>
         <p>
-            i've been competing in the <b>advent of code</b> for many years and have consistently high leaderboard rankings (11<sup>th</sup>, 5
-            <sup>th</sup>, 10<sup>th</sup>, and 11<sup>th</sup> over the past four years)
+            I've been competing in the <b>advent of code</b> for many years with consistently high leaderboard rankings. I think the advent of code is a great opportunity
+            to develop and refine your coding skills no matter your level
         </p>
         <p>
-            i think the advent of code is a great opportunity for beginners to get started with programming, novices to hone their skills in particular areas,
-            and experienced coders to push their limits and train their problem solving alike
-        </p>
-        <p>
-            i've been creating solution videos on my{" "}
-            <a href="https://youtube.com/@hyper-neutrino" target="_blank" class="text-teal">youtube channel</a>{" "}
-            which i hope can inspire others to challenge themselves and develop their skills
+            I've been creating solution videos on my
+            <a href="https://youtube.com/@hyper-neutrino" target="_blank">youtube channel</a>
+            which I hope can inspire others to challenge themselves and develop their skills
         </p>
         <span class="flex flex-wrap items-center gap-4">
             <img src="/tcn.png" width={40} height={40} alt="tcn icon" class="rounded-full" />
-            <b>tcn</b>
+            <a href="https://teyvatcollective.network/" target="_blank"><b>tcn</b></a>
             <div class="text-gray">/</div>
-            <a href="https://teyvatcollective.network/" target="_blank" class="text-teal">website</a>
-            <div class="text-gray">/</div>
-            <a href="https://github.com/teyvat-collective-network" target="_blank" class="text-teal">github</a>
+            <a href="https://github.com/teyvat-collective-network" target="_blank">github</a>
         </span>
         <p>
-            the <b>teyvat collective network</b> is a network of genshin impact discord servers. although it was not founded by me, i organized most of the internal
-            operations, community management, and public relations for a few years as well. during this time, i also owned the technical infrastructure including
-            a website, a custom discord bot with many internal tools, a chat bot linking channels between servers to allow for a cross-server community, and a public-facing
-            RESTful API
+            the <b>teyvat collective network</b> is a network of genshin impact discord servers. during my time as admin, I organized much of the internal operations,
+            community management, and public relations and owned the technical infrastructure including two discord bots, a website, and an API
         </p>
         <span class="flex flex-wrap items-center gap-4">
             <img src="/proton.png" width={40} height={40} alt="proton icon" class="rounded-full" />
-            <b>proton</b>
+            <a href="https://tio.run/#proton" target="_blank"><b>proton</b></a>
             <div class="text-gray">/</div>
-            <a href="https://tio.run/#proton" target="_blank" class="text-teal">try it online</a>
-            <div class="text-gray">/</div>
-            <a href="https://github.com/hyperneutrino/proton" target="_blank" class="text-teal">github</a>
+            <a href="https://github.com/hyperneutrino/proton" target="_blank">github</a>
         </span>
         <p>
-            <b>proton</b> is a multi-paradigm programming language inspired by python's simplicity with c-like syntax and functional features. it's not a production-ready
-            language and not too stable, but i made this in high school well before i learned parser and compiler design and programming language theory in university
+            <b>proton</b> is a multi-paradigm programming language inspired by python's simplicity with C-like syntax and functional features. it's not a production-ready
+            language and not too stable, but I made this in high school well before I learned parser and compiler design and programming language theory in university
         </p>
+    </div>
+    <div
+        class="flex w-full flex-col gap-4 border-2 p-2 opacity-80 transition duration-500 hover:scale-100 hover:opacity-100 md:scale-[99%] md:opacity-80"
+        style="border-image-slice: 1; border-image-source: linear-gradient(to bottom right, #c765ab 20%, #65abc7 80%)"
+    >
+        <p>cool people to check out</p>
+        <div class="flex flex-wrap items-center gap-2">
+            <a href="https://dundeezhang.com" target="_blank">
+                <img src="https://dundeezhang.com/badges/dundeezhang.gif" alt="dundee zhang's badge" style="w-[88px] h-[31px]" />
+            </a>
+            <a href="https://csclub.uwaterloo.ca/~s23adhik/" target="_blank">
+                <img src="https://csclub.uwaterloo.ca/~s23adhik/images/badge.png" alt="sourojeet adhikari's badge" style="w-[88px] h-[31px]" />
+            </a>
+        </div>
+        <p>uwaterloo webring</p>
+        <div class="flex items-center gap-4">
+            <a href="https://cs.uwatering.com/#hyperneutrino.xyz?nav=prev">←</a>
+            <a href="https://cs.uwatering.com/#hyperneutrino.xyz" target="_blank">
+                <img src="https://cs.uwatering.com/icon.white.svg" alt="uwaterloo webring logo" style="width: 24px; height: auto; opacity: 0.8;" />
+            </a>
+            <a href="https://cs.uwatering.com/#hyperneutrino.xyz?nav=next">→</a>
+        </div>
     </div>
 </div>
