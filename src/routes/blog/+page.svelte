@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<h1 class="mb-4 text-3xl">my blog</h1>
+<h1 class="mb-4 text-3xl">blog</h1>
 <div class="flex flex-col items-center gap-4">
     <div
         class="flex w-full flex-col gap-4 border-2 border-pink bg-gray-800 p-2 opacity-80 transition duration-500 hover:scale-100 hover:opacity-100 md:scale-[99%] md:opacity-80"

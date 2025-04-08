@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Geo&family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next&family=Geo&family=Share+Tech+Mono&display=swap");
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
@@ -11,7 +11,20 @@ html {
 body {
     width: 100vw;
     overflow-x: hidden;
+    font-family: "Atkinson Hyperlegible Next", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button,
+.geo {
     font-family: Geo, sans-serif;
+    font-size: 105%;
 }
 
 a {

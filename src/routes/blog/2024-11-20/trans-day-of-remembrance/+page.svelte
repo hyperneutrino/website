@@ -59,18 +59,18 @@
     <p class="border-l-4 border-l-gray-400 pl-4 text-gray-200">
         <i>
             First they came for the Socialists, <br />
-            and I did not speak out &mdash; <br />
+            and I did not speak out&mdash; <br />
             Because I was not a Socialist. <br />
             <br />
             Then they came for the Trade Unionists, <br />
-            and I did not speak out &mdash; <br />
+            and I did not speak out&mdash; <br />
             Because I was not a Trade Unionist. <br />
             <br />
             Then they came for the Jews, <br />
-            and I did not speak out &mdash; <br />
+            and I did not speak out&mdash; <br />
             Because I was not a Jew. <br />
             <br />
-            Then they came for me &mdash; <br />
+            Then they came for me&mdash; <br />
             and there was no one left <br />
             to speak for me.
         </i>

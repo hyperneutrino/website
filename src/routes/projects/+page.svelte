@@ -1,3 +1,4 @@
+<h1 class="text-3xl">projects</h1>
 <p>here are some of the projects I'm the most proud of! you can find an (incomplete) list of stuff I've made on my github</p>
 <div
     class="flex w-full flex-col gap-4 border-2 p-2 opacity-80 transition duration-500 hover:scale-100 hover:opacity-100 md:scale-[99%] md:opacity-80"
