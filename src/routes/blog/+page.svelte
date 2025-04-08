@@ -11,7 +11,7 @@
         </h2>
         <p>Today is International Transgender Day of Remembrance. On this day, we celebrate the lives of those who have lost their lives to transphobia.</p>
         <p>
-            <a href="/blog/2024-11-20/trans-day-of-remembrance" class="sliding-underline">read this article &rarr;</a>
+            <a href="/blog/2024-11-20/trans-day-of-remembrance">read this article &rarr;</a>
         </p>
     </div>
 </div>

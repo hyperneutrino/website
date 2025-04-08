@@ -38,11 +38,11 @@ a {
     }
 }
 
-.sliding-underline {
+a:not(.btn) {
     position: relative;
 }
 
-.sliding-underline:after {
+a:not(.btn):after {
     content: "";
     position: absolute;
     width: 0;
@@ -55,7 +55,7 @@ a {
     -webkit-transition: width 0.2s ease;
 }
 
-.sliding-underline:hover:after {
+a:not(.btn):hover:after {
     width: 100%;
     left: 0;
     background: #27756d;

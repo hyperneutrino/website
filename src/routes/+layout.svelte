@@ -28,7 +28,7 @@
                 <div class="flex flex-wrap items-center gap-2">
                     {#each links as [href, icon, _name]}
                         {@const name = _name ?? icon}
-                        <a {href} target="_blank" class="duration-250 border-2 p-2 opacity-90 transition-opacity hover:opacity-100 md:opacity-75" title={name}>
+                        <a {href} target="_blank" class="btn duration-250 border-2 p-2 opacity-90 transition-opacity hover:opacity-100 md:opacity-75" title={name}>
                             <img src="/{icon}.svg" width={24} height={24} alt="{name} icon" />
                         </a>
                     {/each}
@@ -36,7 +36,7 @@
                 <div class="flex flex-wrap items-center gap-2">
                     <a href="/">home</a>
                     <span>&middot;</span>
-                    <a href="/">about</a>
+                    <a href="/projects">projects</a>
                     <span>&middot;</span>
                     <a href="/blog">blog</a>
                 </div>
