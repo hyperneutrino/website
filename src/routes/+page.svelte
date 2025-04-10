@@ -1,7 +1,6 @@
 <script lang="ts">
     import { emailAddress } from "$lib";
     let email: string = "";
-    let expandIdentities: boolean = false;
 
     const badges: [string, string, string][] = [
         ["hyperneutrino", "/badge.png", "/badge.png"],
@@ -17,18 +16,7 @@
     <a class="btn" href="/canada"><img src="/canada.png" alt="canadian flag" class="h-4" /></a>
     <a class="btn" href="https://lgbtqia.fandom.com/wiki/Transgender" target="_blank"><img src="/trans.png" alt="trans flag" class="h-4" /></a>
     <a class="btn" href="https://lgbtqia.fandom.com/wiki/Non-binary" target="_blank"><img src="/enby.png" alt="non-binary flag" class="h-4" /></a>
-    {#if expandIdentities}
-        <a class="btn" href="https://lgbtqia.fandom.com/wiki/Transfeminine" target="_blank"><img src="/transfem.png" alt="transfem flag" class="h-4" /></a>
-        <a class="btn" href="https://lgbtqia.fandom.com/wiki/Genderflux" target="_blank"><img src="/genderflux.png" alt="genderflux flag" class="h-4" /></a>
-    {/if}
-    <a class="btn" href="https://lgbtqia.fandom.com/wiki/Lesbian" target="_blank"><img src="/lesbian.png" alt="lesbian flag" class="h-4" /></a>
-    {#if expandIdentities}
-        <a class="btn" href="https://lgbtqia.fandom.com/wiki/Bisexual" target="_blank"><img src="/bisexual.png" alt="bisexual flag" class="h-4" /></a>
-        <a class="btn" href="https://lgbtqia.fandom.com/wiki/Polyamorous" target="_blank"><img src="/polyamorous.png" alt="polyamorous flag" class="h-4" /></a>
-    {/if}
-    <a href={"javascript:void(0)"} on:click={() => (expandIdentities = !expandIdentities)}
-        >[{#if expandIdentities}&ndash;{:else}+{/if}]</a
-    >
+    <a class="btn" href="https://lgbtqia.fandom.com/wiki/Polyamorous" target="_blank"><img src="/polyamorous.png" alt="polyamorous flag" class="h-4" /></a>
 </p>
 {#if email}
     <p>
