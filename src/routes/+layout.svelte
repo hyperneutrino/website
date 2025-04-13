@@ -45,7 +45,7 @@
                     <span>&middot;</span>
                     <a href="/blog">blog</a>
                     <span>&middot;</span>
-                    <a href="https://www.notion.so/iris-xyz/Iris-Public-Task-Board" target="_blank">task board</a>
+                    <a href="https://www.notion.so/iris-xyz/Iris-Public-Task-Board-1d362181600180f6bdfdf8452830cb24?pvs=4" target="_blank">task board</a>
                 </div>
                 <slot />
             </div>
