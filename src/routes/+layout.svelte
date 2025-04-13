@@ -44,6 +44,8 @@
                     <a href="/projects">projects</a>
                     <span>&middot;</span>
                     <a href="/blog">blog</a>
+                    <span>&middot;</span>
+                    <a href="https://www.notion.so/iris-xyz/Iris-Public-Task-Board" target="_blank">task board</a>
                 </div>
                 <slot />
             </div>
