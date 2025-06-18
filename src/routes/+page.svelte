@@ -4,6 +4,7 @@
 
     const badges: [string, string, string][] = [
         ["hyperneutrino", "/badge.png", "/badge.png"],
+        ["hexadecimaldinosaur", "https://hexadecimaldinosaur.com", "https://hexadecimaldinosaur.com/static/button.gif"],
         ["dundee zhang", "https://dundeezhang.com", "https://dundeezhang.com/badges/dundeezhang.gif"],
         ["siracha", "https://csclub.uwaterloo.ca/~s23adhik/", "https://csclub.uwaterloo.ca/~s23adhik/images/badge.png"],
     ];
