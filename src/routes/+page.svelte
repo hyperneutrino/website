@@ -8,16 +8,18 @@
         ["dundee zhang", "https://dundeezhang.com", "https://dundeezhang.com/badges/dundeezhang.gif"],
         ["siracha", "https://csclub.uwaterloo.ca/~s23adhik/", "https://csclub.uwaterloo.ca/~s23adhik/images/badge.png"],
     ];
+
+    const now = new Date();
+    const age = now.getFullYear() - 2002 - (now.getMonth() < 7 || (now.getMonth() === 7 && now.getDate() < 8) ? 1 : 0);
 </script>
 
-<h2 class="text-3xl">hey, I'm <b>Iris</b> a.k.a. hyperneutrino</h2>
-<p class="geo">web dev &middot; discord bot dev &middot; youtuber</p>
+<h2 class="text-3xl">Hey, I'm <b>Iris</b> a.k.a. HyperNeutrino</h2>
+<p class="geo">Web Developer &middot; Discord Bot Developer &middot; YouTube Creator</p>
 <p class="flex flex-wrap items-center gap-2 text-lg text-gray-200">
-    <a href="/pronouns">she/they</a>
-    <a class="btn" href="/canada"><img src="/canada.png" alt="canadian flag" class="h-4" /></a>
-    <a class="btn" href="https://lgbtqia.fandom.com/wiki/Transgender" target="_blank"><img src="/trans.png" alt="trans flag" class="h-4" /></a>
-    <a class="btn" href="https://lgbtqia.fandom.com/wiki/Non-binary" target="_blank"><img src="/enby.png" alt="non-binary flag" class="h-4" /></a>
-    <a class="btn" href="https://lgbtqia.fandom.com/wiki/Polyamorous" target="_blank"><img src="/polyamorous.png" alt="polyamorous flag" class="h-4" /></a>
+    <span class="geo">she/they</span>
+    <img src="/canada.png" alt="canadian flag" class="h-4" />
+    <img src="/trans.png" alt="trans flag" class="h-4" />
+    <img src="/enby.png" alt="non-binary flag" class="h-4" />
 </p>
 {#if email}
     <p>
@@ -34,17 +36,18 @@
         style="border-image-slice: 1; border-image-source: linear-gradient(to bottom right, #c765ab 20%, #65abc7 80%)"
     >
         <p>
-            hey! I'm <b>hyperneutrino</b>, a 22-y/o trans/non-binary computer science student. my hobbies include music, coding, and video games
+            Hi, I'm <b>HyperNeutrino</b>, a {age}-y/o trans/nonbinary software developer. My hobbies include music, coding, and video games. I completed an
+            Bachelor's of Computer Science at the University of Waterloo in 2025.
         </p>
         <p>
-            I started coding around grade 5 starting with miscellaneous three.js projects including a rubik's cube simulator. since then, I've worked with many
-            languages, frameworks, and libraries
+            I started coding around grade 5, starting with miscellaneous THREE.js projects such as a rubik's cube simulator. Since then, I've worked with many
+            languages, frameworks, and libraries.
         </p>
         <p>
             I'm known for my performance in the
-            <a href="https://adventofcode.com" target="_blank">advent of code</a>, an annual speed-coding challenge, with a placement of 11<sup>th</sup>, 5<sup
+            <a href="https://adventofcode.com" target="_blank">Advent of Code</a>, an annual speed-coding challenge, with a placement of 11<sup>th</sup>, 5<sup
                 >th</sup
-            >, 10<sup>th</sup>, 11<sup>th</sup>, and 86<sup>th</sup> (thanks to AI cheaters) over the past five years
+            >, 10<sup>th</sup>, and 11<sup>th</sup> in four consecutive years.
         </p>
     </div>
     <div

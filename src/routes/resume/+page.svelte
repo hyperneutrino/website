@@ -1,4 +1,4 @@
-<h1 class="text-3xl">Projects</h1>
+<h1 class="text-3xl">Resume</h1>
 <p>Here are some of the projects of which I'm the most proud! You can find an (incomplete) list of things I've made on my GitHub.</p>
 <div
     class="flex w-full flex-col gap-4 border-2 p-2 opacity-80 transition duration-500 hover:scale-100 hover:opacity-100 md:scale-[99%] md:opacity-80"

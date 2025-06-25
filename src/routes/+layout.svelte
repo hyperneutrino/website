@@ -21,7 +21,7 @@
                 <div class="flex items-center gap-4">
                     <img src="/icon.png" width={64} height={64} alt="pink lambda icon" />
                     <h1 class="bg-[linear-gradient(to_bottom_right,#c765ab_20%,#65abc7_80%)] bg-clip-text py-1 text-[min(6vw,2rem)] text-transparent">
-                        hyperneutrino
+                        HyperNeutrino
                     </h1>
                 </div>
                 <hr class="border border-pink" />
@@ -39,11 +39,11 @@
                     {/each}
                 </div>
                 <div class="flex flex-wrap items-center gap-2">
-                    <a href="/">home</a>
+                    <a href="/">Home</a>
                     <span>&middot;</span>
-                    <a href="/projects">projects</a>
+                    <a href="/projects">Projects</a>
                     <span>&middot;</span>
-                    <a href="https://www.notion.so/iris-xyz/Iris-Public-Task-Board-1d362181600180f6bdfdf8452830cb24?pvs=4" target="_blank">task board</a>
+                    <a href="/resume">Resume</a>
                 </div>
                 <slot />
             </div>
