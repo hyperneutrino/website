@@ -43,7 +43,7 @@
                     <span>&middot;</span>
                     <a href="/projects">Projects</a>
                     <span>&middot;</span>
-                    <a href="/resume">Resume</a>
+                    <a href="/portfolio">Portfolio</a>
                 </div>
                 <slot />
             </div>
