@@ -13,7 +13,7 @@
     const age = now.getFullYear() - 2002 - (now.getMonth() < 7 || (now.getMonth() === 7 && now.getDate() < 8) ? 1 : 0);
 </script>
 
-<h2 class="text-3xl">Hey, I'm <b>Iris</b> a.k.a. HyperNeutrino</h2>
+<h2 class="text-3xl">Hey, I'm <b>Alex</b> (or Iris) a.k.a. HyperNeutrino</h2>
 <p class="geo">Web Developer &middot; Discord Bot Developer &middot; YouTube Creator</p>
 <p class="flex flex-wrap items-center gap-2 text-lg text-gray-200">
     <span class="geo">she/they</span>
