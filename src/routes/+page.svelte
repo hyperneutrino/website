@@ -36,7 +36,7 @@
         style="border-image-slice: 1; border-image-source: linear-gradient(to bottom right, #c765ab 20%, #65abc7 80%)"
     >
         <p>
-            Hi, I'm <b>HyperNeutrino</b>, a {age}-y/o trans/nonbinary software developer. My hobbies include music, coding, and video games. I completed an
+            Hi, I'm <b>HyperNeutrino</b>, a {age}-y/o trans/nonbinary software developer. My hobbies include music, coding, and video games. I completed a
             Bachelor's of Computer Science at the University of Waterloo in 2025.
         </p>
         <p>
