@@ -1,11 +1,11 @@
 <h1 class="text-3xl">Projects</h1>
-<p>Here are some of the projects of which I'm the most proud! You can find an (incomplete) list of things I've made on my GitHub.</p>
+<p>Here are some of the projects I wanted to showcase! You can find an (incomplete) list of things I've made on my GitHub.</p>
 <div
     class="flex w-full flex-col gap-4 border-2 p-2 opacity-80 transition duration-500 hover:scale-100 hover:opacity-100 md:scale-[99%] md:opacity-80"
     style="border-image-slice: 1; border-image-source: linear-gradient(to bottom right, #c765ab 20%, #65abc7 80%)"
 >
     <span class="flex flex-wrap items-center gap-4">
-        <img src="/daedalus.png" width={40} height={40} alt="daedalus icon" class="rounded-full" />
+        <img src="/daedalus.png" width={40} height={40} alt="Daedalus Icon" class="rounded-full" />
         <a href="https://daedalusbot.xyz" target="_blank"><b>Daedalus</b></a>
     </span>
     <p>
@@ -19,20 +19,22 @@
     style="border-image-slice: 1; border-image-source: linear-gradient(to bottom right, #c765ab 20%, #65abc7 80%)"
 >
     <span class="flex flex-wrap items-center gap-4">
-        <img src="/aoc.svg" width={40} height={40} alt="aoc icon" class="rounded-full" />
+        <img src="/aoc.svg" width={40} height={40} alt="Advent of Code Icon" class="rounded-full" />
         <a href="https://adventofcode.com" target="_blank"><b>Advent of Code</b></a>
+        <div class="text-gray">/</div>
+        <a href="https://youtube.com/playlist?list=PLnNm9syGLD3wvdOk4K6JPyzx3Z8O2XJrv" target="_blank">2025 playlist</a>
         <div class="text-gray">/</div>
         <a href="https://youtube.com/playlist?list=PLnNm9syGLD3z5MSpszQaN5kinAELELnLP" target="_blank">2024 playlist</a>
         <div class="text-gray">/</div>
         <a href="https://youtube.com/playlist?list=PLnNm9syGLD3zLoIGWeHfnEekEKxPKLivw" target="_blank">2023 playlist</a>
     </span>
     <p>
-        I've been competing in the <b>Advent of Code</b> for many years with consistently high leaderboard rankings. I think the Advent of Code is a great opportunity
-        to develop and refine your coding skills, no matter your level of experience.
+        I've been doing <b>Advent of Code</b> for many years. I think the Advent of Code is a great opportunity to develop and refine your coding skills, no matter
+        your level of experience.
     </p>
     <p>
         I've been creating solution videos on my
-        <a href="https://youtube.com/@hyper-neutrino" target="_blank">youtube channel</a>, which I hope can inspire others to challenge themselves and develop
+        <a href="https://youtube.com/@hyper-neutrino" target="_blank">YouTube channel</a>, which I hope can inspire others to challenge themselves and develop
         their skills.
     </p>
 </div>
@@ -41,15 +43,19 @@
     style="border-image-slice: 1; border-image-source: linear-gradient(to bottom right, #c765ab 20%, #65abc7 80%)"
 >
     <span class="flex flex-wrap items-center gap-4">
-        <img src="/tcn.png" width={40} height={40} alt="tcn icon" class="rounded-full" />
-        <a href="https://teyvatcollective.network/" target="_blank"><b>TCN</b></a>
+        <img src="/ec.png" width={40} height={40} alt="Everybody Codes Icon" class="rounded-full" />
+        <a href="https://adventofcode.com" target="_blank"><b>Everybody Codes</b></a>
         <div class="text-gray">/</div>
-        <a href="https://github.com/teyvat-collective-network" target="_blank">GitHub</a>
+        <a href="https://youtube.com/playlist?list=PLnNm9syGLD3z8yo3j0tq2m1n3JIw_sXk-" target="_blank">2026 playlist</a>
+        <div class="text-gray">/</div>
+        <a href="https://youtube.com/playlist?list=PLnNm9syGLD3wnV9M6Td1jScDE6NBHYhqF" target="_blank">2025 playlist</a>
     </span>
     <p>
-        The <b>Teyvat Collective Network</b> is a network Discord servers in the community of Genshin Impact (a video game). I was an admin of this community and
-        organized much of the internal operations, community management, and public relations. I also owned and maintained the technical infrastructure, including
-        an internal and an external Discord bot, a website, and an API.
+        I've been doing <b>Everybody Codes</b> for a couple of years. It is a similar challenge to the Advent of Code but has unique traits, and I think it is also
+        a great way to improve your skills.
+    </p>
+    <p>
+        I've been creating solution videos for EC on my <a href="https://youtube.com/@hyper-neutrino" target="_blank">YouTube channel</a> as well.
     </p>
 </div>
 <div
@@ -57,7 +63,7 @@
     style="border-image-slice: 1; border-image-source: linear-gradient(to bottom right, #c765ab 20%, #65abc7 80%)"
 >
     <span class="flex flex-wrap items-center gap-4">
-        <img src="/proton.png" width={40} height={40} alt="proton icon" class="rounded-full" />
+        <img src="/proton.png" width={40} height={40} alt="Proton Icon" class="rounded-full" />
         <a href="https://tio.run/#proton" target="_blank"><b>Proton</b></a>
         <div class="text-gray">/</div>
         <a href="https://github.com/hyperneutrino/proton" target="_blank">GitHub</a>

@@ -15,7 +15,7 @@
 
 <div class="flex min-h-screen w-full flex-col items-center bg-gray-900 text-lg text-white lg:bg-black">
     <div class="flex min-h-screen w-[min(1000px,95vw)] gap-4 bg-gray-900">
-        <div class="h-100 breathe ml-1 border-l-4 border-l-pink md:ml-2 lg:ml-4"></div>
+        <div class="h-100 ml-1 animate-[breathe_5s_infinite] border-l-4 border-l-pink md:ml-2 lg:ml-4"></div>
         <div class="mr-1 mt-4 flex flex-grow flex-col justify-between md:mr-2 lg:mr-4">
             <div class="mb-8 flex flex-col gap-2">
                 <div class="flex items-center gap-4">
@@ -42,14 +42,12 @@
                     <a href="/">Home</a>
                     <span>&middot;</span>
                     <a href="/projects">Projects</a>
-                    <span>&middot;</span>
-                    <a href="/portfolio">Portfolio</a>
                 </div>
                 <slot />
             </div>
             <div>
                 <hr class="border border-pink" />
-                <p class="geo py-2 text-center text-sm text-gray-500">&copy; 2025 hyperneutrino</p>
+                <p class="py-2 text-center text-sm text-gray-500">&copy; 2025 hyperneutrino</p>
             </div>
         </div>
     </div>
