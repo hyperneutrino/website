@@ -15,7 +15,7 @@
 <h2 class="text-3xl">Hey, I'm hyperneutrino!</h2>
 <p>Web Developer &middot; Discord Bot Developer &middot; YouTube Creator</p>
 <p class="flex flex-wrap items-center gap-2 text-lg text-gray-200">
-    <span class="gradient">it/they/she</span>
+    <span class="gradient">they/them</span>
     <img src="/canada.png" alt="Canadian Flag" class="h-4" />
     <img src="/trans.png" alt="Transgender Flag" class="h-4" />
     <img src="/enby.png" alt="Nonbinary Flag" class="h-4" />
