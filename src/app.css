@@ -30,7 +30,7 @@ button,
 a,
 .gradient {
     color: transparent;
-    background: linear-gradient(to bottom right, #c765ab 20%, #65abc7 80%);
+    background: linear-gradient(to bottom right, #dd7113 20%, #71bb13 80%);
     background-clip: text;
 }
 

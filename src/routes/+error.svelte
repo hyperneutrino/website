@@ -2,7 +2,7 @@
     <b>404</b> Not Found
 </h1>
 <p>
-    this page does not exist &middot;
-    <a href="/" class="text-pink">go home</a>
+    This page does not exist.
+    <a href="/" class="text-orange">Return to homepage</a>. Check your spelling, including capitalization&mdash;if you arrived here from a link on this site,
+    please let me know.
 </p>
-<p>check your spelling (including capitalization) &mdash; if you arrived here from a link on this site, let me know!</p>
